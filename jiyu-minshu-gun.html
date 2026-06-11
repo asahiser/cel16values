@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自由民主軍 - Wikipedia</title>
+<style>
+  :root{
+    --wiki-blue:#0645ad;
+    --wiki-border:#a2a9b1;
+    --wiki-bg:#f8f9fa;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;
+    color:#202122;
+    background:#fff;
+    margin:0;
+    line-height:1.65;
+    font-size:15px;
+  }
+  /* 冒頭の架空注記（記事の外側） */
+  .fiction-disclaimer{
+    background:#fff4e5;
+    border:1px solid #e0a458;
+    border-left:6px solid #e0a458;
+    color:#5a4321;
+    padding:14px 20px;
+    margin:0;
+    font-size:13.5px;
+    line-height:1.6;
+  }
+  .fiction-disclaimer strong{color:#9a5b00;}
+  .page{
+    max-width:1000px;
+    margin:0 auto;
+    padding:20px 28px 60px;
+  }
+  h1.article-title{
+    font-family:'Times New Roman',Georgia,serif;
+    font-weight:normal;
+    font-size:1.9em;
+    border-bottom:1px solid var(--wiki-border);
+    padding-bottom:4px;
+    margin:18px 0 4px;
+  }
+  .subtitle{
+    color:#54595d;
+    font-size:0.85em;
+    margin:0 0 16px;
+    border-bottom:1px solid #eaecf0;
+    padding-bottom:10px;
+  }
+  h2{
+    font-family:'Times New Roman',Georgia,serif;
+    font-weight:normal;
+    font-size:1.5em;
+    border-bottom:1px solid var(--wiki-border);
+    padding-bottom:3px;
+    margin:28px 0 12px;
+    clear:both;
+  }
+  h3{
+    font-size:1.18em;
+    margin:20px 0 8px;
+  }
+  h4{
+    font-size:1.02em;
+    margin:16px 0 6px;
+  }
+  p{margin:0 0 12px;}
+  a{color:var(--wiki-blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a.red{color:#ba0000;}
+  /* インフォボックス */
+  .infobox{
+    float:right;
+    width:320px;
+    margin:6px 0 18px 22px;
+    border:1px solid var(--wiki-border);
+    background:var(--wiki-bg);
+    font-size:12.8px;
+    line-height:1.5;
+  }
+  .infobox .ib-title{
+    background:#b22222;
+    color:#fff;
+    text-align:center;
+    font-weight:bold;
+    padding:8px 6px;
+    font-size:1.18em;
+  }
+  .infobox .ib-sub{
+    text-align:center;
+    background:#eee;
+    color:#333;
+    padding:4px;
+    font-style:italic;
+  }
+  .infobox .ib-emblem{
+    text-align:center;
+    padding:14px 6px;
+    background:#fff;
+  }
+  .ib-emblem .emblem-circle{
+    display:inline-block;
+    width:120px;height:120px;
+    border-radius:50%;
+    background:radial-gradient(circle at 50% 40%,#1d3f7a,#0c1d3a);
+    color:#f5d76e;
+    line-height:120px;
+    font-size:46px;
+    border:3px solid #f5d76e;
+    box-shadow:0 0 0 3px #1d3f7a;
+  }
+  .ib-emblem .caption{
+    display:block;
+    margin-top:8px;
+    color:#54595d;
+    font-size:0.92em;
+  }
+  .infobox table{width:100%;border-collapse:collapse;}
+  .infobox th{
+    text-align:left;
+    vertical-align:top;
+    background:#dfe3e8;
+    width:38%;
+    padding:5px 7px;
+    border-top:1px solid #c8ccd1;
+    font-weight:bold;
+  }
+  .infobox td{
+    vertical-align:top;
+    padding:5px 7px;
+    border-top:1px solid #c8ccd1;
+  }
+  .infobox .ib-section{
+    background:#b22222;
+    color:#fff;
+    text-align:center;
+    font-weight:bold;
+    padding:4px;
+  }
+  /* 目次 */
+  .toc{
+    display:inline-block;
+    background:var(--wiki-bg);
+    border:1px solid var(--wiki-border);
+    padding:10px 18px 12px;
+    margin:14px 0;
+    font-size:0.95em;
+  }
+  .toc .toc-title{font-weight:bold;text-align:center;margin-bottom:6px;}
+  .toc ol{margin:0;padding-left:22px;}
+  .toc ol ol{padding-left:20px;}
+  .toc li{margin:2px 0;}
+  /* 注記ハットノート */
+  .hatnote{
+    font-style:italic;
+    color:#54595d;
+    padding:2px 0 2px 28px;
+    margin:0 0 10px;
+    font-size:0.95em;
+  }
+  blockquote{
+    border-left:3px solid #c8ccd1;
+    margin:14px 0;
+    padding:4px 16px;
+    color:#3a3a3a;
+    background:#fafafa;
+  }
+  blockquote cite{display:block;text-align:right;font-style:normal;color:#666;margin-top:6px;}
+  ul,ol{margin:0 0 12px;padding-left:26px;}
+  li{margin:3px 0;}
+  sup.ref a{font-size:0.8em;}
+  .references{font-size:0.88em;color:#222;}
+  .references li{margin:5px 0;}
+  table.wikitable{
+    border-collapse:collapse;
+    margin:12px 0;
+    font-size:0.92em;
+    background:#f8f9fa;
+    width:100%;
+  }
+  table.wikitable th,table.wikitable td{
+    border:1px solid #a2a9b1;
+    padding:6px 9px;
+    text-align:left;
+    vertical-align:top;
+  }
+  table.wikitable th{background:#eaecf0;}
+  table.wikitable caption{font-weight:bold;margin-bottom:4px;text-align:left;}
+  .catlinks{
+    border:1px solid var(--wiki-border);
+    background:var(--wiki-bg);
+    padding:8px 12px;
+    margin-top:30px;
+    font-size:0.9em;
+  }
+  .catlinks a{margin-right:4px;}
+  .quotebox{
+    border:1px solid #c8ccd1;
+    background:#f9f9f9;
+    padding:12px 18px;
+    margin:16px 0;
+    max-width:420px;
+    float:left;
+    margin-right:20px;
+    font-size:0.95em;
+  }
+  hr.section-rule{border:none;border-top:1px solid #eaecf0;margin:20px 0;}
+  .clear{clear:both;}
+  @media (max-width:680px){
+    .infobox{float:none;width:auto;margin:10px 0;}
+    .quotebox{float:none;max-width:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 架空であることの注記（記事本体の外側・最初に明記） ===== -->
+<div class="fiction-disclaimer">
+  <strong>【架空設定に関する注記】</strong>
+  このページは、<strong>「戦後日本が政策的に仏教ナショナリズムを採用し、1975年の『仏教革命』を経て仏教共和国家となった」</strong>という架空の歴史（パラレルワールド）を題材としたフィクション作品です。
+  記述される団体「自由民主軍」、出来事、組織構成、引用、出典等はすべて創作であり、実在の歴史的事実ではありません。
+  実在の人物名が登場しますが、本作中の人物像・言動・経歴は史実とは無関係の創作です。本作は政治的・宗教的主張を意図したものではなく、特定の宗教・宗派・団体・個人を貶める目的を持つものでもありません。
+  以下の本文は、その架空世界の内部で書かれた百科事典記事という体裁で記述されています。
+</div>
+
+<div class="page">
+
+<h1 class="article-title">自由民主軍</h1>
+<p class="subtitle">出典: フリー百科事典『ウィキペディア（Wikipedia）』</p>
+
+<aside class="infobox">
+  <div class="ib-title">自由民主軍</div>
+  <div class="ib-sub">Liberal Democratic Army (LDA)<br>自由民主軍</div>
+  <div class="ib-emblem">
+    <span class="emblem-circle">⚖</span>
+    <span class="caption">自由民主軍の徽章。中央に立憲主義を象徴する天秤、外周に「自由・民主・立憲」の三標語を配する。</span>
+  </div>
+  <table>
+    <tr><td class="ib-section" colspan="2">概要</td></tr>
+    <tr><th>活動期間</th><td>1975年 - 1989年</td></tr>
+    <tr><th>思想</th><td>世俗主義<br>立憲民主主義<br>政教分離主義<br>反神権政治</td></tr>
+    <tr><th>政治的立場</th><td>中道（世俗立憲派）</td></tr>
+    <tr><th>目的</th><td>1947年憲法体制の回復<br>政教分離の再確立<br>普通選挙の復活</td></tr>
+    <tr><td class="ib-section" colspan="2">組織</td></tr>
+    <tr><th>本部</th><td>非公開（信濃地区を転々）</td></tr>
+    <tr><th>初代最高評議議長</th><td>三木 武夫</td></tr>
+    <tr><th>軍事部門指導者</th><td>田中 角栄</td></tr>
+    <tr><th>主要機関</th><td>立憲最高評議会<br>作戦総局<br>地下選挙管理委員会</td></tr>
+    <tr><th>推定構成員</th><td>最盛期 約2万 - 4万人<br>（支持協力者を除く）</td></tr>
+    <tr><td class="ib-section" colspan="2">経緯</td></tr>
+    <tr><th>前身</th><td>立憲擁護国民会議</td></tr>
+    <tr><th>解散</th><td>1989年（恵那合意による武装解除）</td></tr>
+    <tr><th>後継</th><td>立憲自由民主党（合法政党）</td></tr>
+  </table>
+</aside>
+
+<p>
+<b>自由民主軍</b>（じゆうみんしゅぐん、<span lang="en">Liberal Democratic Army</span>、略称: <b>LDA</b>、<b>自民軍</b>）は、<a href="#">大日本仏教共和国</a>において1975年から1989年まで活動した世俗立憲主義派の地下武装抵抗組織である。1975年のいわゆる<a href="#">仏教革命</a>により<a href="#">護法評議会</a>が政権を掌握し、<a href="#">1947年憲法</a>に代わって政教一致を国是とする<a href="#">護国仏法基本法</a>が施行されたことに反対し、政教分離と議会制民主主義の回復を掲げて結成された<sup class="ref"><a href="#cite1">[1]</a></sup>。
+</p>
+
+<p>
+組織の中核を担ったのは、革命以前の<a href="#">自由民主党</a>に属していた政治家・官僚・地方議員らであり、彼らは「世俗国家としての立憲日本」の正統な継承者を自任した。最高指導機関である<b>立憲最高評議会</b>の初代議長には<a href="#">三木武夫</a>が就き、組織・兵站の事実上の総帥として<a href="#">田中角栄</a>が、思想・外交部門を<a href="#">大平正芳</a>と<a href="#">福田赳夫</a>が、地下諜報を旧警察官僚出身の<a href="#">後藤田正晴</a>が担ったとされる<sup class="ref"><a href="#cite2">[2]</a></sup>。
+</p>
+
+<p>
+自由民主軍は単なる武装勢力にとどまらず、占領地で「地下普通選挙」を組織し、独自の憲法擁護裁判所を運営するなど、<b>「もう一つの合法政府」</b>としての性格を強く帯びていた点に特徴がある<sup class="ref"><a href="#cite3">[3]</a></sup>。1989年の<a href="#">恵那合意</a>による武装解除と引き換えに政党結成の自由が認められ、その人脈は合法政党<a href="#">立憲自由民主党</a>へと引き継がれた。
+</p>
+
+<div class="toc">
+  <div class="toc-title">目次</div>
+  <ol>
+    <li><a href="#history">歴史的背景</a>
+      <ol>
+        <li><a href="#bg-buddhist">仏教ナショナリズム政策と仏教革命</a></li>
+        <li><a href="#bg-found">立憲擁護国民会議から自由民主軍へ</a></li>
+      </ol>
+    </li>
+    <li><a href="#ideology">思想と綱領</a></li>
+    <li><a href="#org">組織</a>
+      <ol>
+        <li><a href="#org-council">立憲最高評議会</a></li>
+        <li><a href="#org-military">作戦総局</a></li>
+        <li><a href="#org-election">地下選挙管理委員会</a></li>
+      </ol>
+    </li>
+    <li><a href="#people">主要な人物</a></li>
+    <li><a href="#ops">主要な作戦と事件</a></li>
+    <li><a href="#decline">武装解除と後継</a></li>
+    <li><a href="#legacy">評価と影響</a></li>
+    <li><a href="#seealso">関連項目</a></li>
+    <li><a href="#refs">脚注</a></li>
+  </ol>
+</div>
+
+<div class="clear"></div>
+
+<h2 id="history">歴史的背景</h2>
+
+<h3 id="bg-buddhist">仏教ナショナリズム政策と仏教革命</h3>
+<p class="hatnote">詳細は「<a href="#">仏教ナショナリズム</a>」および「<a href="#">仏教革命</a>」を参照</p>
+<p>
+第二次世界大戦の敗戦後、占領下の日本では国家の精神的再建をめぐる路線対立が続いた。1950年代以降、伝統仏教教団と一部の保守政治勢力が結びついて推進した「<b>護国仏法路線</b>」は、経済成長の停滞と社会不安を背景に1960年代後半から急速に支持を拡大した。1970年代に入ると、政教分離を定めた<a href="#">1947年憲法</a>第20条の「形骸化」を主張する勢力が議会内外で台頭した<sup class="ref"><a href="#cite4">[4]</a></sup>。
+</p>
+<p>
+1975年、<a href="#">護法評議会</a>を中心とする勢力が非常事態を宣言し、議会を停止して<a href="#">護国仏法基本法</a>を施行した。これが<a href="#">仏教革命</a>と呼ばれる政変である。新体制は元号を「<a href="#">正法</a>（しょうぼう）」と改め、立法・行政の上位に教団代表からなる<b>護法院</b>を置く政教一致の共和制をとった。これに対し、革命を「立憲秩序の簒奪」とみなす世俗派は各地で抵抗運動を組織していった。
+</p>
+
+<h3 id="bg-found">立憲擁護国民会議から自由民主軍へ</h3>
+<p>
+革命直後の1975年秋、解散させられた<a href="#">自由民主党</a>の有志議員と地方組織は、地下組織「<b>立憲擁護国民会議</b>」を結成した。当初は文書配布や請願を中心とする非暴力運動であったが、1976年の<b>春日井弾圧事件</b>で多数の活動家が拘束されると、運動は武装自衛へと転換する<sup class="ref"><a href="#cite5">[5]</a></sup>。
+</p>
+<p>
+1976年6月、<a href="#">三木武夫</a>を議長とする立憲最高評議会が設立され、武装部門を統合して正式に<b>自由民主軍</b>を称した。三木は「清廉」を旨とする指導者として知られ、組織内の規律と非汚職を徹底したと伝えられる。一方、組織化・兵站の実務は<a href="#">田中角栄</a>が掌握し、地方建設業者や地縁組織を通じた補給網を構築したことが、長期の抵抗を可能にしたとされる<sup class="ref"><a href="#cite6">[6]</a></sup>。
+</p>
+
+<div class="quotebox">
+「我々は宗教に敵対しているのではない。国家が一つの法に仕えることを拒んでいるのだ。仏法は寺院にこそ宿る。憲法は国家に宿る。両者を取り違えた時、人は信仰も自由も失う。」
+<cite>— 三木武夫、立憲最高評議会設立宣言（1976年）とされる文書より</cite>
+</div>
+<div class="clear"></div>
+
+<h2 id="ideology">思想と綱領</h2>
+<p>
+自由民主軍の思想的核心は<b>世俗立憲主義</b>にある。彼らは特定の宗教を否定するのではなく、国家機構と宗教権力の分離（政教分離）を絶対的原則として掲げた。その綱領「<b>立憲三原則</b>」は次のように要約される<sup class="ref"><a href="#cite7">[7]</a></sup>。
+</p>
+<ol>
+  <li><b>主権在民</b> — 統治の正統性は護法院ではなく、普通選挙で選ばれた議会に由来する。</li>
+  <li><b>政教分離</b> — いかなる宗派も国家機関を支配せず、信仰は私的領域に属する。</li>
+  <li><b>法の支配</b> — 1947年憲法を最高規範とし、宗教的教義を法の上位に置かない。</li>
+</ol>
+<p>
+注目すべきは、構成員の多くが個人としては仏教徒であり、組織が「<b>信仰の自由のための戦い</b>」を標榜した点である。大平正芳は記録に残る論説で、「信仰を国家の道具にすることこそ、仏への最大の不敬である」と述べ、政教一致体制を<b>仏教そのものへの裏切り</b>と位置づける論理を展開した<sup class="ref"><a href="#cite8">[8]</a></sup>。この「敬虔な世俗主義」とも呼ぶべき立場は、仏教共和国家の内部においても一定の道徳的説得力を持ったとされる。
+</p>
+
+<h2 id="org">組織</h2>
+<p>
+自由民主軍は、政治・軍事・選挙の三系統を併置する独特の二重統治構造を採用した。これは「武力による政権打倒」ではなく「立憲秩序の地下保全」を目的とする組織理念の反映であった。
+</p>
+
+<h3 id="org-council">立憲最高評議会</h3>
+<p>
+最高意思決定機関。革命前の国会を継承する正統機関を自任し、地下で「議会」を擬制的に運営した。議長は<a href="#">三木武夫</a>（初代）、後に<a href="#">福田赳夫</a>（第2代）が務めたとされる。重要決定は合議制をとり、田中・大平・福田の各派が並立する派閥均衡が維持された点は、革命前の自由民主党の政治文化を色濃く反映していた<sup class="ref"><a href="#cite9">[9]</a></sup>。
+</p>
+
+<h3 id="org-military">作戦総局</h3>
+<p>
+軍事・兵站を統括する実働部門。総帥は<a href="#">田中角栄</a>とされ、その下で<a href="#">中曽根康弘</a>が戦略・対外宣伝を、<a href="#">金丸信</a>と<a href="#">小沢一郎</a>が地方部隊の編成と補給を担った。諜報・防諜は旧<a href="#">警察庁</a>長官の経歴を持つ<a href="#">後藤田正晴</a>が統括し、「<b>カミソリ機関</b>」と通称される情報網を運営したと伝えられる<sup class="ref"><a href="#cite10">[10]</a></sup>。
+</p>
+
+<h3 id="org-election">地下選挙管理委員会</h3>
+<p>
+自由民主軍を他の武装勢力と決定的に区別したのが、この機関の存在である。委員会は占領地域で秘密裡に「<b>地下普通選挙</b>」を実施し、当選者からなる地下議会を組織した。委員長は法律家出身の<a href="#">宮沢喜一</a>が務めたとされ、投票の秘密保持と開票の公正さに異常なまでにこだわったことが、組織の正統性の源泉となった<sup class="ref"><a href="#cite11">[11]</a></sup>。1981年には推定で延べ40万人が地下選挙に参加したとの記録がある。
+</p>
+
+<h2 id="people">主要な人物</h2>
+<table class="wikitable">
+  <caption>自由民主軍の主要指導者（公表されている範囲）</caption>
+  <tr><th>氏名</th><th>役職・部門</th><th>役割の概要</th></tr>
+  <tr><td><a href="#">三木武夫</a></td><td>立憲最高評議会 初代議長</td><td>清廉な象徴的指導者。組織の規律と反汚職を徹底し、対外的正統性を確立した。</td></tr>
+  <tr><td><a href="#">田中角栄</a></td><td>作戦総局 総帥</td><td>兵站・組織化の実務的中枢。地方の地縁・産業網を補給線に転用した。</td></tr>
+  <tr><td><a href="#">福田赳夫</a></td><td>立憲最高評議会 第2代議長</td><td>財政・規律を重視。三木後の評議会を統率し、対話路線への転換を主導。</td></tr>
+  <tr><td><a href="#">大平正芳</a></td><td>思想・外交部門</td><td>「敬虔な世俗主義」を理論化。亡命世俗派や国際社会との連絡を担当。</td></tr>
+  <tr><td><a href="#">中曽根康弘</a></td><td>戦略・宣伝</td><td>地下放送「自由の声」を統括し、組織の戦略宣伝を主導した。</td></tr>
+  <tr><td><a href="#">後藤田正晴</a></td><td>諜報・防諜部門</td><td>旧警察官僚。情報網「カミソリ機関」を運営し、内部規律と保安を担った。</td></tr>
+  <tr><td><a href="#">宮沢喜一</a></td><td>地下選挙管理委員会 委員長</td><td>法律家として地下選挙の公正運営を統括。立憲擁護裁判所も主宰した。</td></tr>
+  <tr><td><a href="#">金丸信</a></td><td>地方部隊編成</td><td>東日本の部隊統合と地方有力者との調整にあたった。</td></tr>
+  <tr><td><a href="#">小沢一郎</a></td><td>補給・若年部門</td><td>若年層の動員と兵站の近代化を担い、後継世代の中心となった。</td></tr>
+</table>
+
+<h2 id="ops">主要な作戦と事件</h2>
+<ul>
+  <li><b>春日井弾圧事件</b>（1976年） — 立憲擁護国民会議の活動家が大量拘束された事件。非暴力運動が武装抵抗へ転換する契機となった。</li>
+  <li><b>第一次地下選挙</b>（1978年） — 占領地で初めて組織的に実施された秘密選挙。組織の「立憲政府」としての性格を確立した。</li>
+  <li><b>正法暦放送占拠</b>（1980年） — 中曽根康弘の指揮下で国営放送の中継回線を一時占拠し、政教分離を訴える声明を流したとされる宣伝作戦。</li>
+  <li><b>白川郷の対話</b>（1985年） — 福田赳夫主導で行われた、政権側との最初の秘密接触。後の和平交渉の起点とされる。</li>
+  <li><b>恵那合意</b>（1989年） — 武装解除と引き換えに政党結成の自由が認められた包括的政治合意。組織の解散につながった。</li>
+</ul>
+
+<h2 id="decline">武装解除と後継</h2>
+<p>
+1980年代後半、長期化した内戦による社会の疲弊と、仏教共和国家内部での穏健改革派の台頭により、双方に和平を模索する動きが強まった。1985年の<b>白川郷の対話</b>を皮切りに断続的な交渉が続き、1989年、岐阜県恵那において包括的政治合意（<a href="#">恵那合意</a>）が成立した<sup class="ref"><a href="#cite12">[12]</a></sup>。
+</p>
+<p>
+合意の主な内容は、(1) 自由民主軍の武装解除、(2) 政教分離規定を含む憲法改正国民投票の実施、(3) 普通選挙に基づく議会の再開、(4) 世俗政党の結成の自由、の4点であった。これにより自由民主軍は1989年に正式に解散し、その人脈と理念は合法政党<a href="#">立憲自由民主党</a>へと引き継がれた。小沢一郎ら後継世代がこの政党の中核を担ったとされる。
+</p>
+
+<h2 id="legacy">評価と影響</h2>
+<p>
+自由民主軍に対する評価は、立場によって大きく分かれる。世俗立憲派の歴史叙述では、暴力に訴えながらも「地下選挙」や「憲法擁護裁判所」を通じて手続的正統性を保ち続けた点が高く評価され、<b>「武器を持った議会」</b>とも称される<sup class="ref"><a href="#cite13">[13]</a></sup>。一方、護法体制側の史料はこれを「立憲を僭称した武装反乱」と位置づけてきた。
+</p>
+<p>
+近年の研究では、宗教を否定せずに政教分離を擁護したその思想的姿勢が、後の<a href="#">大日本仏教共和国</a>における世俗化改革と信教の自由の制度化に長期的影響を与えたとする見方が有力である。とりわけ大平正芳の「敬虔な世俗主義」は、信仰と立憲主義の両立可能性を示した思想として再評価が進んでいる<sup class="ref"><a href="#cite14">[14]</a></sup>。
+</p>
+
+<h2 id="seealso">関連項目</h2>
+<ul>
+  <li><a href="#">大日本仏教共和国</a></li>
+  <li><a href="#">仏教革命</a></li>
+  <li><a href="#">護国仏法基本法</a></li>
+  <li><a href="#">1947年憲法</a></li>
+  <li><a href="#">政教分離原則</a></li>
+  <li><a href="#">立憲自由民主党</a></li>
+  <li><a href="#">恵那合意</a></li>
+</ul>
+
+<h2 id="refs">脚注</h2>
+<ol class="references">
+  <li id="cite1">『立憲日本地下史 1975-1989』立憲史料研究会編、自由出版、1994年、pp.12-18。</li>
+  <li id="cite2">山辺敬一『二重統治の構造 ― 自由民主軍の組織論』正法大学出版会、1998年、pp.45-60。</li>
+  <li id="cite3">「武器を持った議会 ― 地下選挙の実証研究」『立憲政治史研究』第14号、1996年。</li>
+  <li id="cite4">『護国仏法路線の形成過程』近現代宗教政治研究所、1992年、第3章。</li>
+  <li id="cite5">「春日井弾圧事件再考」『抵抗運動史論集』2001年所収。</li>
+  <li id="cite6">田辺正雄『兵站の政治 ― 地縁ネットワークと地下抵抗』信濃書房、2003年、pp.88-102。</li>
+  <li id="cite7">『自由民主軍綱領・立憲三原則 注解版』立憲史料研究会、1995年。</li>
+  <li id="cite8">大平正芳「信仰と国家についての覚書」地下文書、1979年（『敬虔なる世俗主義』所収、2005年）。</li>
+  <li id="cite9">前掲『二重統治の構造』pp.110-128。</li>
+  <li id="cite10">河村信吾『地下の眼 ― カミソリ機関と防諜の時代』2007年、pp.30-55。</li>
+  <li id="cite11">「地下普通選挙の手続と正統性」『選挙制度史研究』第9号、1999年。</li>
+  <li id="cite12">『恵那合意の研究 ― 和平への道』2010年、序章・第5章。</li>
+  <li id="cite13">井上正『武器を持った議会 ― 立憲抵抗の思想』2012年。</li>
+  <li id="cite14">「敬虔な世俗主義の再評価」『現代仏教共和国論』第22号、2018年。</li>
+</ol>
+
+<div class="catlinks">
+  <b>カテゴリ</b>:
+  <a href="#">大日本仏教共和国の政治</a> |
+  <a href="#">立憲主義運動</a> |
+  <a href="#">かつて存在した武装組織</a> |
+  <a href="#">政教分離</a> |
+  <a href="#">1975年設立</a> |
+  <a href="#">1989年解散</a>
+</div>
+
+</div>
+</body>
+</html>
