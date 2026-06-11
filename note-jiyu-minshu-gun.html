@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ノート:自由民主軍 - Wikipedia</title>
+<style>
+  :root{
+    --wiki-blue:#0645ad;
+    --wiki-border:#a2a9b1;
+    --wiki-bg:#f8f9fa;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;
+    color:#202122;
+    background:#fff;
+    margin:0;
+    line-height:1.65;
+    font-size:15px;
+  }
+  .fiction-disclaimer{
+    background:#fff4e5;
+    border:1px solid #e0a458;
+    border-left:6px solid #e0a458;
+    color:#5a4321;
+    padding:14px 20px;
+    margin:0;
+    font-size:13.5px;
+    line-height:1.6;
+  }
+  .fiction-disclaimer strong{color:#9a5b00;}
+  .page{max-width:1000px;margin:0 auto;padding:6px 28px 60px;}
+  .article-tabs{
+    border-bottom:1px solid var(--wiki-border);
+    margin:6px 0 0;
+    font-size:0.92em;
+  }
+  .article-tabs .tab{
+    display:inline-block;
+    padding:5px 14px;
+    border:1px solid var(--wiki-border);
+    border-bottom:none;
+    background:#eaecf0;
+    color:var(--wiki-blue);
+    margin-right:2px;
+    border-radius:3px 3px 0 0;
+    position:relative;
+    top:1px;
+    text-decoration:none;
+  }
+  .article-tabs .tab-active{
+    background:#fff;color:#202122;font-weight:bold;border-bottom:1px solid #fff;
+  }
+  h1.article-title{
+    font-family:'Times New Roman',Georgia,serif;
+    font-weight:normal;font-size:1.9em;
+    border-bottom:1px solid var(--wiki-border);
+    padding-bottom:4px;margin:16px 0 12px;
+  }
+  h2.thread{
+    font-family:'Times New Roman',Georgia,serif;
+    font-weight:normal;font-size:1.45em;
+    border-bottom:1px solid var(--wiki-border);
+    padding-bottom:3px;margin:26px 0 10px;
+  }
+  h3.subthread{font-size:1.13em;margin:16px 0 6px;}
+  a{color:var(--wiki-blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a.red{color:#ba0000;}
+  p{margin:0 0 10px;}
+  /* メッセージボックス（メンテナンステンプレート） */
+  .tmbox{
+    border:1px solid #c0c090;
+    background:#fffef7;
+    padding:10px 14px;
+    margin:10px 0;
+    font-size:0.92em;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .tmbox.notice{border-color:#a2a9b1;background:#f8f9fa;}
+  .tmbox.content{border-color:#f4c430;background:#fffbe6;}
+  .tmbox .icon{font-size:1.7em;line-height:1;}
+  .talkheader{
+    border:1px solid #a2a9b1;
+    background:#f0f6ff;
+    padding:10px 16px;
+    margin:12px 0;
+    font-size:0.9em;
+    border-radius:4px;
+  }
+  .talkheader b{color:#333;}
+  /* プロジェクトバナー */
+  .banner-shell{
+    border:1px solid #a2a9b1;
+    background:#f8f9fa;
+    margin:12px 0;
+    font-size:0.9em;
+  }
+  .banner-shell .shell-head{
+    background:#e1e8f0;padding:6px 12px;font-weight:bold;border-bottom:1px solid #cdd5df;
+  }
+  .banner{
+    display:flex;gap:10px;align-items:flex-start;
+    padding:8px 12px;border-bottom:1px solid #e3e7ec;
+  }
+  .banner:last-child{border-bottom:none;}
+  .banner .pj-icon{font-size:1.4em;line-height:1.2;}
+  .banner .grade{
+    display:inline-block;font-weight:bold;color:#fff;
+    background:#6aa84f;border-radius:3px;padding:0 6px;font-size:0.85em;margin-right:4px;
+  }
+  .banner .grade.b{background:#4a86c8;}
+  .banner .grade.ga{background:#2e7d32;}
+  .banner .grade.high{background:#b22222;}
+  .archivebox{
+    float:right;width:230px;border:1px solid #a2a9b1;background:#f8f9fa;
+    margin:6px 0 14px 18px;font-size:0.86em;
+  }
+  .archivebox .ab-head{background:#dfe3e8;font-weight:bold;text-align:center;padding:5px;}
+  .archivebox .ab-body{padding:8px 12px;}
+  .gabox{
+    border:1px solid #2e7d32;background:#eef7ee;
+    padding:10px 14px;margin:12px 0;font-size:0.9em;border-radius:4px;
+  }
+  .gabox .ga-star{color:#2e7d32;font-weight:bold;}
+  /* 議論スレッド */
+  .talk-toc{
+    display:inline-block;background:var(--wiki-bg);border:1px solid var(--wiki-border);
+    padding:10px 18px 12px;margin:12px 0;font-size:0.95em;
+  }
+  .talk-toc .toc-title{font-weight:bold;text-align:center;margin-bottom:6px;}
+  .talk-toc ol{margin:0;padding-left:22px;}
+  .post{margin:0 0 4px;}
+  .indent1{margin-left:2em;}
+  .indent2{margin-left:4em;}
+  .indent3{margin-left:6em;}
+  .indent4{margin-left:8em;}
+  .post.indent1,.post.indent2,.post.indent3,.post.indent4{
+    border-left:2px solid #e3e7ec;padding-left:10px;
+  }
+  .sig{color:#54595d;font-size:0.9em;white-space:nowrap;}
+  .sig a{color:#54595d;}
+  .user-lda a{color:#0b6b3a;}
+  .user-regime a{color:#9a2a2a;}
+  .user-minshu a{color:#8a5a00;}
+  .user-admin a{color:#6a1b9a;font-weight:bold;}
+  .outdent{color:#54595d;font-size:0.85em;}
+  .resolved{
+    border:1px solid #9bbf9b;background:#eef7ee;border-left:4px solid #4caf50;
+    padding:6px 12px;margin:8px 0;font-size:0.9em;
+  }
+  .small{font-size:0.85em;color:#54595d;}
+  hr.thread-rule{border:none;border-top:1px solid #eaecf0;margin:18px 0;}
+  .ping{color:#0645ad;}
+  .clear{clear:both;}
+  @media (max-width:680px){
+    .archivebox{float:none;width:auto;}
+    .indent3{margin-left:4em;}.indent4{margin-left:5em;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 架空であることの注記（ページ本体の外側・最初に明記） ===== -->
+<div class="fiction-disclaimer">
+  <strong>【架空設定に関する注記】</strong>
+  このページは、<strong>「戦後日本が政策的に仏教ナショナリズムを採用し、1975年の『仏教革命』を経て仏教共和国家となった」</strong>という架空の歴史を題材としたフィクション作品の一部であり、記事「自由民主軍」に付属する<strong>ノート（議論）ページ</strong>の体裁を模したものです。
+  登場する利用者（編集者）、議論、出典、評価等はすべて創作であり、実在の人物・団体・事実とは関係ありません。
+  実在の人物名が記事の話題として登場しますが、本作中の記述は史実とは無関係の創作です。本作は政治的・宗教的主張を意図したものではありません。
+  以下の本文は、その架空世界の内部で交わされた百科事典の編集議論という体裁で記述されています。
+</div>
+
+<div class="page">
+
+<div class="article-tabs">
+  <a class="tab" href="jiyu-minshu-gun.html">記事</a>
+  <span class="tab tab-active">ノート</span>
+</div>
+
+<h1 class="article-title">ノート:自由民主軍</h1>
+
+<div class="talkheader">
+  <b>これは記事「<a href="jiyu-minshu-gun.html">自由民主軍</a>」の改善を目的とした議論ページです。</b> 記事の主題に関する一般的な議論や演説の場ではありません。
+  <ul style="margin:6px 0 0;">
+    <li>新しい話題は<b>ページ下部</b >に追加し、見出しを付けてください。</li>
+    <li>署名は <code>--~~~~</code> で行ってください。</li>
+    <li><b>中立的観点</b>を保ち、出典に基づいて議論してください。政治的・宗教的立場の表明は控えめに。</li>
+  </ul>
+</div>
+
+<!-- メンテナンステンプレート -->
+<div class="tmbox content">
+  <span class="icon">⚠️</span>
+  <div>
+    この記事には<b>中立的観点（NPOV）に関する議論</b>が進行中です。特にインフォボックスの「政治的立場」および「テロ組織／抵抗運動」の呼称をめぐって意見が対立しています。詳細は<a href="#t2">§ 呼称と中立性</a>を参照してください。
+  </div>
+</div>
+
+<!-- プロジェクトバナー -->
+<div class="banner-shell">
+  <div class="shell-head">この記事は以下のウィキプロジェクトの範囲内にあります</div>
+  <div class="banner">
+    <span class="pj-icon">⚔️</span>
+    <div><b>ウィキプロジェクト 軍事・抵抗運動</b> — この記事はプロジェクトの<b>重要度「高」</b>に分類されています。<br>
+      <span class="grade b">B</span> 品質評価: B級（良質な記事の選考中。<a href="#t9">§ GA選考</a>参照）</div>
+  </div>
+  <div class="banner">
+    <span class="pj-icon">🏛️</span>
+    <div><b>ウィキプロジェクト 政治</b> — <span class="grade b">B</span> 重要度「高」。世俗派政治史の中核項目です。</div>
+  </div>
+  <div class="banner">
+    <span class="pj-icon">☸️</span>
+    <div><b>ウィキプロジェクト 大日本仏教共和国</b> — <span class="grade b">B</span> 重要度「最高」。<br>
+      <span class="small">注意: 本プロジェクトには護法体制・世俗派双方の編集者が参加しています。編集合戦を避けてください。</span></div>
+  </div>
+</div>
+
+<!-- 良質な記事選考 -->
+<div class="gabox">
+  <span class="ga-star">☆ 良質な記事の選考中</span> — この記事は2026年4月14日に「良質な記事」の選考に推薦されました。レビュー状況は<a href="#t9">§ GA選考（2026年4月）</a>を参照してください。現在のところ<b>賛成3・条件付賛成2・反対1</b>。主な争点は出典の偏り（在外組織刊行物への依存）と護法体制側視点の不足です。
+</div>
+
+<div class="archivebox">
+  <div class="ab-head">過去ログ</div>
+  <div class="ab-body">
+    <a href="#">過去ログ1</a>（2009-2015）<br>
+    <a href="#">過去ログ2</a>（2016-2021）<br>
+    <a href="#">過去ログ3</a>（2022 七・八事件直後）<br>
+    <a href="#">過去ログ4</a>（2023-2024 兵団解体令）<br>
+    <span class="small">※ 90日間コメントのない節は自動的に過去ログ化されます。</span>
+  </div>
+</div>
+
+<div class="talk-toc">
+  <div class="toc-title">目次</div>
+  <ol>
+    <li><a href="#t1">記事名について</a></li>
+    <li><a href="#t2">呼称と中立性（「テロ組織」か「抵抗運動」か）</a></li>
+    <li><a href="#t3">石橋湛山「国師」記述の出典</a></li>
+    <li><a href="#t4">七・八事件・実行犯の記述について</a></li>
+    <li><a href="#t5">兵器・装備節の新設について</a></li>
+    <li><a href="#t6">高市早苗「第9代総司令官」の表記</a></li>
+    <li><a href="#t7">護法体制側の視点の不足（NPOV）</a></li>
+    <li><a href="#t8">出典の信頼性 ― 在外立憲日本人会議の刊行物</a></li>
+    <li><a href="#t9">良質な記事（GA）選考（2026年4月）</a></li>
+    <li><a href="#t10">分割提案: 「越山回廊」</a></li>
+    <li><a href="#t11">半保護依頼について</a></li>
+  </ol>
+</div>
+
+<div class="clear"></div>
+
+<!-- ============ スレッド1 ============ -->
+<h2 class="thread" id="t1">記事名について</h2>
+<p class="post">
+本記事の名称は組織の自称である「自由民主軍」となっていますが、これは中立的でしょうか。公的資料では「<b>立憲僭称武装集団</b>」、国際メディアでは「<b>LDA（Liberal Democratic Army）</b>」が一般的です。自称をそのまま記事名にするのは方針上どうなのか、議論したいです。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年3月2日 (月) 09:11 (UTC)</span>
+</p>
+<p class="post indent1">
+反対します。記事名は「最も一般的に使われている名称」が原則で、国内外の報道・学術文献の双方で「自由民主軍」「自民軍」が圧倒的多数です。自称か他称かは記事名選定の基準ではありません。「立憲僭称武装集団」は明らかに護法体制側の評価語であり、こちらの方が中立性を欠きます。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年3月2日 (月) 10:40 (UTC)</span>
+</p>
+<p class="post indent1">
+コメント。学術データベースでの使用頻度を確認したところ、「自由民主軍」が約8割、「LDA」が約1.5割、その他が残りでした。慣例に従い現行のままで問題ないと考えます。
+<span class="sig user-minshu">--<a href="#">友愛1998</a>（<a href="#">会話</a>）2026年3月3日 (火) 08:02 (UTC)</span>
+</p>
+<div class="resolved">✅ <b>解決済み</b>: 現行の記事名「自由民主軍」を維持。冒頭に他称（LDA、立憲僭称武装集団）を併記することで合意。
+<span class="sig user-admin">--<a href="#">管理者ヤマダ</a>（<a href="#">会話</a>）2026年3月10日 (火) 12:00 (UTC)</span></div>
+
+<!-- ============ スレッド2 ============ -->
+<h2 class="thread" id="t2">呼称と中立性（「テロ組織」か「抵抗運動」か）</h2>
+<p class="post">
+インフォボックスおよび本文で本組織を「抵抗組織」と記述していますが、護法体制下の法令では明確に「テロ組織」に指定されています。少なくとも両論併記すべきです。現状はあからさまに組織に同情的で、中立的観点に反します。{{<a href="#">中立性</a>}}タグを貼りました。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年4月3日 (金) 14:55 (UTC)</span>
+</p>
+<p class="post indent1">
+「テロ組織」という指定は<b>一方の当事者（護法体制）による法的指定</b>にすぎません。国連人権理事会は本組織を一貫して「抵抗運動（resistance movement）」の文脈で扱っており、複数国が「テロ組織」指定を見送っています。一当事者の法令を中立的事実として書くことはできません。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年4月3日 (金) 16:20 (UTC)</span>
+</p>
+<p class="post indent2">
+それを言うなら「抵抗運動」も国際社会の<b>一部</b>の評価でしょう。要は<b>誰がどう呼んでいるかを帰属付きで書く</b>のが筋です。「護法体制はテロ組織に指定」「国連人権理事会等は抵抗運動と位置づけ」と、主語を明記して両論併記すれば解決するのでは。
+<span class="sig user-minshu">--<a href="#">友愛1998</a>（<a href="#">会話</a>）2026年4月4日 (土) 09:30 (UTC)</span>
+</p>
+<p class="post indent2">
+賛成。Wikipediaは「真実」ではなく「誰がそう述べたか」を書く場所です。友愛1998さんの帰属併記案を支持します。インフォボックスの「政治的立場: 中道」も同様で、これは世俗派内部での相対的位置づけにすぎないので「世俗立憲主義（自称）」程度に留めるべきでは。
+<span class="sig">--<a href="#">中立を旨とす</a>（<a href="#">会話</a>）2026年4月4日 (土) 11:48 (UTC)</span>
+</p>
+<p class="post indent1">
+<span class="outdent">（インデント戻します）</span>では具体的な文案を。冒頭文を「<b>……世俗立憲主義を掲げる地下武装組織。護法体制はこれをテロ組織に指定する一方、国連人権理事会の複数の決議は抵抗運動として言及している</b>」としてはどうでしょう。これで{{中立性}}タグは除去可能と考えます。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年4月5日 (日) 10:05 (UTC)</span>
+</p>
+<p class="post indent2">
+その文案で合意します。ただし「複数の決議」には脚注で具体的な決議番号を補ってください。出典なき「複数」は<a href="#">言葉を濁さない</a>方針に触れます。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年4月6日 (月) 08:40 (UTC)</span>
+</p>
+<div class="resolved">⚠️ <b>進行中（暫定合意）</b>: 帰属付き両論併記の文案で大枠合意。決議番号の出典補充を条件に{{中立性}}タグを保留。出典補充待ち。</div>
+
+<!-- ============ スレッド3 ============ -->
+<h2 class="thread" id="t3">石橋湛山「国師」記述の出典</h2>
+<p class="post">
+「歴史的背景」節の<b>石橋湛山を護法体制が没後に『国師』として神格化したが、本人の立憲主義とは乖離している</b>という記述ですが、これは編集者個人の評価＝<a href="#">独自研究</a>ではありませんか。出典の高村(2008)を確認しましたが、「乖離」とまで断じているのか疑問です。{{<a href="#">要検証</a>}}を付与しました。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年3月18日 (水) 13:22 (UTC)</span>
+</p>
+<p class="post indent1">
+高村(2008)の原文では「顕彰事業は石橋の議会主義的言説を選択的に捨象している」とあり、「乖離」はその要約として妥当な範囲だと思います。ただ「神格化」は強い語なので「顕彰」に置き換えるのは賛成です。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年3月18日 (水) 15:10 (UTC)</span>
+</p>
+<p class="post indent1">
+コメント。この論点は出典が一つに依存しているのが弱点です。石橋顕彰をめぐっては護法体制側の宗務行政の公式見解も存在するはずなので、それを対置して帰属付きで書けば独自研究の懸念は薄れます。誰か体制側の一次資料を当たれませんか。
+<span class="sig user-minshu">--<a href="#">友愛1998</a>（<a href="#">会話</a>）2026年3月19日 (木) 09:55 (UTC)</span>
+</p>
+<p class="post indent2">
+正法宗務院の『国師顕彰の意義』（正法四十年刊）が一次資料として使えます。ただし一次資料の解釈には注意が必要なので、引用に留めるべきでしょう。週末に図書館で確認してきます。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年3月19日 (木) 21:30 (UTC)</span>
+</p>
+
+<!-- ============ スレッド4 ============ -->
+<h2 class="thread" id="t4">七・八事件・実行犯の記述について</h2>
+<div class="tmbox notice">
+  <span class="icon">🛈</span>
+  <div>この節は<b>存命人物の記述</b>に関わる可能性があります。実行犯の動機・所属について、信頼できる出典で確認できない記述は<b>即時除去</b>の対象です（<a href="#">存命人物の伝記</a>方針）。</div>
+</div>
+<p class="post">
+「七・八事件」節で実行犯の動機について諸説を列挙していますが、真相調査委員会の最終報告が未公表である以上、いずれの説も<b>憶測の域を出ません</b>。工作員説・内部犯行説を併記すること自体が、特定の陰謀論に重みを与えてしまう恐れがあります。動機の記述は「調査中であり不明」に一本化すべきでは。
+<span class="sig">--<a href="#">中立を旨とす</a>（<a href="#">会話</a>）2026年5月1日 (金) 10:14 (UTC)</span>
+</p>
+<p class="post indent1">
+同意します。現状の「工作員説」の記述は、出典が世俗派系メディアの推測報道のみで、検証可能性を満たしていません。中間報告(2024)が「断定を避けている」という事実だけを書き、諸説の列挙は除去すべきです。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年5月1日 (金) 12:40 (UTC)</span>
+</p>
+<p class="post indent2">
+一部反対。諸説が<b>社会的に広く流布している</b>こと自体は事実で、出典付きで「こうした説が取り沙汰されている」と書くのは百科事典的に有意義です。ただし各説を事実であるかのように書くのは不可。「動機は不明だが、A説・B説などが報じられている（出典）」という形式なら残せるのでは。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年5月2日 (土) 08:05 (UTC)</span>
+</p>
+<p class="post indent2">
+越山さんの折衷案を支持。ただし<b>護法体制の関与を匂わせる説</b>は、名指しされる側の名誉に関わるため特に慎重に。主語を曖昧にした「〜とも言われる」式の記述は除去対象とすべきです。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年5月2日 (土) 14:20 (UTC)</span>
+</p>
+<div class="resolved">⚠️ <b>進行中</b>: 「動機は調査中・不明」を主軸とし、流布する諸説は帰属・出典付きで簡潔に言及する方向で概ね合意。曖昧表現は除去。最終報告公表後に再編集予定。</div>
+
+<!-- ============ スレッド5 ============ -->
+<h2 class="thread" id="t5">兵器・装備節の新設について</h2>
+<p class="post">
+「兵器・装備と兵站」節を新設しました。調達経路・解放区の自製装備・象徴的装備・非武装の情報装備・越山回廊の兵站を扱っています。長らく手薄だった分野なので加筆を歓迎します。なお、運用手順や製造の具体的方法は百科事典の範囲を超えるため意図的に省いています（<a href="#">ハウツーではない</a>方針）。
+<span class="sig user-lda">--<a href="#">雪国の編集者</a>（<a href="#">会話</a>）2026年5月20日 (火) 19:30 (UTC)</span>
+</p>
+<p class="post indent1">
+良い加筆だと思います。ただ「越山銃」「楕円弾」などの通称節は、出典が寺島(2017)の一冊にほぼ依存しています。象徴的装備の逸話は出典の偏りが品質評価で問題になりやすいので、可能なら別系統の文献を補ってください。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年5月21日 (水) 09:12 (UTC)</span>
+</p>
+<p class="post indent1">
+コメント。「埋蔵兵器」や「闇ルートの流入品」の記述は、出所の性質上どうしても一次的証言に頼りがちです。断定を避け「〜とされる」を徹底しているのは適切と判断します。一点、護法体制側は「自由民主軍の自製能力は誇張されている」と主張しているので、§7のNPOV議論と合わせて体制側評価も一文添えると良いかと。
+<span class="sig user-minshu">--<a href="#">友愛1998</a>（<a href="#">会話</a>）2026年5月21日 (水) 15:48 (UTC)</span>
+</p>
+<p class="post indent2">
+ご指摘ありがとうございます。「信濃工廠の自製能力については、護法体制側が誇張との見方を示している」旨を脚注で補いました。出典の追加は引き続き募集します。
+<span class="sig user-lda">--<a href="#">雪国の編集者</a>（<a href="#">会話</a>）2026年5月22日 (木) 20:10 (UTC)</span>
+</p>
+
+<!-- ============ スレッド6 ============ -->
+<h2 class="thread" id="t6">高市早苗「第9代総司令官」の表記</h2>
+<p class="post">
+インフォボックスと歴代総司令官表で、高市早苗を「第9代総司令官（係争中）」としていますが、方面軍司令官会議の追認が得られていない以上、<b>正式な就任とは言えない</b>のではないですか。「自称」あるいは「就任を主張」と書くべきでは。
+<span class="sig user-minshu">--<a href="#">友愛1998</a>（<a href="#">会話</a>）2026年5月28日 (木) 11:00 (UTC)</span>
+</p>
+<p class="post indent1">
+「自称」は中立性を欠きます。継承評議会で最多票を得たという<b>手続的事実</b>はあり、一部方面軍が追認を留保しているという<b>もう一つの事実</b>もある。どちらか一方に倒すのではなく、「就任を宣言したが追認は係争中」と両事実を併記する現行表記が最も正確だと思います。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年5月28日 (木) 13:25 (UTC)</span>
+</p>
+<p class="post indent1">
+コメント。これは<a href="#">速報主義を避ける</a>べき典型例ですね。状況が流動的なので、断定的な「第9代」ではなく、本文で経緯を説明し、インフォボックスは「<b>総司令官（係争中・空位）</b>」と保守的に書くのが無難です。決着がつき次第更新すればよい。
+<span class="sig">--<a href="#">中立を旨とす</a>（<a href="#">会話</a>）2026年5月29日 (金) 08:50 (UTC)</span>
+</p>
+<p class="post indent2">
+中立を旨とすさんに同意。infoboxは「現況: 総司令官 空位／高市が就任を宣言、追認は係争中」と現行のままで、安定するまで「第9代」確定表記は避けましょう。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年5月29日 (金) 17:33 (UTC)</span>
+</p>
+
+<!-- ============ スレッド7 ============ -->
+<h2 class="thread" id="t7">護法体制側の視点の不足（NPOV）</h2>
+<p class="post">
+記事全体を通読しましたが、叙述が<b>世俗派・自由民主軍の視点に大きく傾いています</b>。「解放区」「弾圧」「掃討作戦」など、組織側の用語が地の文で無批判に使われています。「解放区」は組織の自称で、中立的には「実効支配地域」とすべきですし、「弾圧」も帰属が必要です。これは記事全体のNPOV問題です。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年4月10日 (金) 10:00 (UTC)</span>
+</p>
+<p class="post indent1">
+一部もっともです。地の文での「解放区」は初出で「自由民主軍が『解放区』と呼ぶ実効支配地域」と定義し、以後は文脈に応じて使う、という運用にしましょう。「弾圧」「掃討作戦」も史料用語であることを明示すべき。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年4月10日 (金) 14:15 (UTC)</span>
+</p>
+<p class="post indent1">
+ただ、用語の機械的な言い換えで「中立」になるわけでもありません。研究文献の多くが「解放区」「地下選挙」という語を学術用語として採用している以上、過度の言い換えはかえって読者を混乱させます。<b>定義を明示した上で慣用に従う</b>のが現実的では。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年4月11日 (土) 09:40 (UTC)</span>
+</p>
+<p class="post indent2">
+折衷として、独立した「<b>護法体制側の視点</b>」の小節を「評価と影響」内に設け、体制側の公式評価・反論をまとめて記述してはどうでしょう。視点の不足は「対立する見解を一箇所で補う」ことでも改善できます。
+<span class="sig user-minshu">--<a href="#">友愛1998</a>（<a href="#">会話</a>）2026年4月12日 (日) 12:30 (UTC)</span>
+</p>
+<div class="tmbox notice">
+  <span class="icon">🛈</span>
+  <div><b>合意形成中</b>: (1) 初出での用語定義、(2) 史料用語の明示、(3) 体制側視点の小節新設、の3点で改善を進める。NPOVタグは改善完了まで維持。</div>
+</div>
+
+<!-- ============ スレッド8 ============ -->
+<h2 class="thread" id="t8">出典の信頼性 ― 在外立憲日本人会議の刊行物</h2>
+<p class="post">
+脚注で「在外立憲日本人会議編」の刊行物が複数使われています（cite8 ほか）。これは当事者組織の刊行物であり、<a href="#">自主公表された情報源</a>に該当します。事実関係の裏付けとしては<b>慎重に扱うべき</b>で、特に組織に有利な評価的記述の典拠としては不適切では。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年4月22日 (火) 16:00 (UTC)</span>
+</p>
+<p class="post indent1">
+同感です。当事者刊行物は「組織がこう主張している」という<b>主張の出典</b>としては有効ですが、「事実そうである」という<b>事実の出典</b>には使えません。該当箇所を洗い出して、第三者の学術文献に差し替えるか、帰属表現に改めるべきです。
+<span class="sig">--<a href="#">中立を旨とす</a>（<a href="#">会話</a>）2026年4月23日 (水) 08:20 (UTC)</span>
+</p>
+<p class="post indent1">
+作業を始めました。正法大学出版会・信濃書房などの第三者学術出版に置換できる箇所から順次差し替えています。ただし建軍初期（1976-80）は当事者証言以外の一次資料が乏しく、完全な置換は困難です。その部分は「在外立憲日本人会議の記録によれば」と明示帰属で残す方針でよいでしょうか。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年4月24日 (木) 19:45 (UTC)</span>
+</p>
+<p class="post indent2">
+それで問題ないと思います。明示帰属＋「一次資料」の注記があれば読者は割り引いて読めます。お疲れさまです。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年4月25日 (金) 09:10 (UTC)</span>
+</p>
+
+<!-- ============ スレッド9 ============ -->
+<h2 class="thread" id="t9">良質な記事（GA）選考（2026年4月）</h2>
+<div class="gabox">
+  <span class="ga-star">☆ 選考サブページ</span>: 推薦者 <span class="user-lda"><a href="#">越山の旅人</a></span>／推薦日 2026年4月14日。本記事を「良質な記事」の基準に照らして審査します。
+</div>
+<p class="post">
+<b>推薦</b>。半世紀の通史、組織構造、思想、兵站までを網羅し、出典も整備されてきました。基準を満たすと考え推薦します。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年4月14日 (火) 20:00 (UTC)</span>
+</p>
+<p class="post indent1">
+<b>条件付賛成</b>。包括性・構成は優れています。ただし§2・§7・§8で議論中のNPOV／出典問題が未決着です。これらの保守的解決を条件に賛成します。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年4月16日 (木) 10:30 (UTC)</span>
+</p>
+<p class="post indent1">
+<b>反対</b>（現時点）。理由は§7のとおり、地の文の視点が一方に傾いている点。良質な記事は中立性が必須基準です。「護法体制側の視点」小節が実装され、用語定義が整うまでは反対します。決して記事の価値を否定するものではありません。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年4月17日 (金) 13:05 (UTC)</span>
+</p>
+<p class="post indent1">
+<b>賛成</b>。読みやすく、対立する見解も（議論を経て）併記されつつあります。細かな出典の偏りは選考期間中に改善可能なレベル。
+<span class="sig user-minshu">--<a href="#">友愛1998</a>（<a href="#">会話</a>）2026年4月19日 (日) 11:20 (UTC)</span>
+</p>
+<p class="post indent1">
+<b>条件付賛成</b>。インフォボックスの高市総司令官表記（§6）が安定すること、および脚注の在外組織刊行物の扱い（§8）が片付くことを条件とします。
+<span class="sig">--<a href="#">中立を旨とす</a>（<a href="#">会話</a>）2026年4月20日 (月) 09:00 (UTC)</span>
+</p>
+<p class="post indent1">
+<span class="outdent">（インデント戻します）</span><b>選考担当より</b>: 現在<b>賛成3・条件付賛成2・反対1</b>。反対・条件の主因はNPOVと出典の二点に集約されます。§7の体制側視点小節の実装が鍵になりそうです。選考期間を2026年6月末まで延長します。各位、改善作業をお願いします。
+<span class="sig user-admin">--<a href="#">管理者ヤマダ</a>（<a href="#">会話</a>）2026年4月28日 (火) 12:00 (UTC)</span>
+</p>
+
+<!-- ============ スレッド10 ============ -->
+<h2 class="thread" id="t10">分割提案: 「越山回廊」</h2>
+<p class="post">
+{{<a href="#">分割提案</a>}}「兵器・装備と兵站」節の<b>越山回廊</b>に関する記述が充実してきたので、独立記事「<a href="#">越山回廊</a>」への分割を提案します。本記事では概要のみ残し、詳細を移す形です。同様に「<a href="#">地下普通選挙</a>」も分割候補かと。
+<span class="sig user-lda">--<a href="#">雪国の編集者</a>（<a href="#">会話</a>）2026年5月25日 (日) 18:00 (UTC)</span>
+</p>
+<p class="post indent1">
+<b>賛成</b>。越山回廊は兵站だけでなく地理・土木史としても独立記事に値する分量です。ただし分割後も本記事側に2〜3段落の要約を残してください（<a href="#">要約スタイル</a>）。
+<span class="sig">--<a href="#">中立を旨とす</a>（<a href="#">会話</a>）2026年5月26日 (月) 08:30 (UTC)</span>
+</p>
+<p class="post indent1">
+<b>時期尚早</b>に一票。地下普通選挙の分割は賛成ですが、越山回廊は現状の分量ならまだ本記事内で十分。GA選考が片付いてから落ち着いて分割しては。
+<span class="sig">--<a href="#">Sander_史料</a>（<a href="#">会話</a>）2026年5月26日 (月) 14:10 (UTC)</span>
+</p>
+
+<!-- ============ スレッド11 ============ -->
+<h2 class="thread" id="t11">半保護依頼について</h2>
+<div class="tmbox content">
+  <span class="icon">🔒</span>
+  <div>この記事は<b>半保護</b>されています（2026年5月10日〜6月10日）。七・八事件以降、IPユーザーによる「テロ組織」「英雄」双方向の繰り返しの書き換えが続いたためです。編集合戦はノートでの合意形成を優先してください。</div>
+</div>
+<p class="post">
+七・八事件の記述と高市総司令官の表記をめぐって、複数のIPによる差し戻し合戦が再発しています。インフォボックスを1日に十数回書き換える事例も。1か月の半保護を依頼しました。
+<span class="sig user-admin">--<a href="#">管理者ヤマダ</a>（<a href="#">会話</a>）2026年5月9日 (土) 22:30 (UTC)</span>
+</p>
+<p class="post indent1">
+妥当な措置です。感情的になりやすい話題なので、本文の安定のためにも賛成します。係争中の点は§2・§4・§6のノート合意を本文に反映する形で進めましょう。
+<span class="sig user-lda">--<a href="#">越山の旅人</a>（<a href="#">会話</a>）2026年5月10日 (日) 07:15 (UTC)</span>
+</p>
+<p class="post indent1">
+半保護に賛成。ただし保護は「どちらかの版を正しいと認めるものではない」点を確認しておきます。保護中もノートでの中立化作業は止めずに。
+<span class="sig user-regime">--<a href="#">正法護持</a>（<a href="#">会話</a>）2026年5月10日 (日) 10:40 (UTC)</span>
+</p>
+
+<hr class="thread-rule">
+<p class="small">
+このノートページは記事「<a href="jiyu-minshu-gun.html">自由民主軍</a>」の改善のために使用されています。90日間更新のない節は順次<a href="#">過去ログ</a>へ移動されます。新規の話題はページ最下部へ。
+</p>
+
+</div>
+</body>
+</html>
