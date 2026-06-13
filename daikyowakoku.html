@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大日本仏教共和国 - Wikipedia</title>
+<style>
+  :root{
+    --wiki-blue:#0645ad;
+    --wiki-border:#a2a9b1;
+    --wiki-bg:#f8f9fa;
+    --gold:#caa83a;
+    --navy:#13294b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;
+    color:#202122;background:#fff;margin:0;line-height:1.65;font-size:15px;
+  }
+  .fiction-disclaimer{
+    background:#fff4e5;border:1px solid #e0a458;border-left:6px solid #e0a458;
+    color:#5a4321;padding:14px 20px;margin:0;font-size:13.5px;line-height:1.6;
+  }
+  .fiction-disclaimer strong{color:#9a5b00;}
+  .page{max-width:1000px;margin:0 auto;padding:6px 28px 60px;}
+  .article-tabs{border-bottom:1px solid var(--wiki-border);margin:6px 0 0;font-size:0.92em;}
+  .article-tabs .tab{
+    display:inline-block;padding:5px 14px;border:1px solid var(--wiki-border);border-bottom:none;
+    background:#eaecf0;color:var(--wiki-blue);margin-right:2px;border-radius:3px 3px 0 0;
+    position:relative;top:1px;text-decoration:none;
+  }
+  .article-tabs .tab-active{background:#fff;color:#202122;font-weight:bold;border-bottom:1px solid #fff;}
+  h1.article-title{
+    font-family:'Times New Roman',Georgia,serif;font-weight:normal;font-size:1.9em;
+    border-bottom:1px solid var(--wiki-border);padding-bottom:4px;margin:16px 0 4px;
+  }
+  .subtitle{color:#54595d;font-size:0.85em;margin:0 0 16px;border-bottom:1px solid #eaecf0;padding-bottom:10px;}
+  h2{
+    font-family:'Times New Roman',Georgia,serif;font-weight:normal;font-size:1.5em;
+    border-bottom:1px solid var(--wiki-border);padding-bottom:3px;margin:28px 0 12px;clear:both;
+  }
+  h3{font-size:1.18em;margin:20px 0 8px;}
+  h4{font-size:1.02em;margin:16px 0 6px;}
+  p{margin:0 0 12px;}
+  a{color:var(--wiki-blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a.red{color:#ba0000;}
+  /* 国インフォボックス */
+  .infobox{
+    float:right;width:340px;margin:6px 0 18px 22px;border:1px solid var(--wiki-border);
+    background:var(--wiki-bg);font-size:12.8px;line-height:1.5;
+  }
+  .infobox .ib-title{
+    background:var(--navy);color:#fff;text-align:center;font-weight:bold;padding:9px 6px;font-size:1.2em;
+  }
+  .infobox .ib-title small{display:block;font-weight:normal;font-size:0.72em;color:#cdd6e6;margin-top:3px;}
+  .ib-symbols{display:flex;justify-content:center;gap:14px;padding:14px 6px;background:#fff;}
+  .flag{
+    width:150px;height:100px;border:1px solid #ccc;
+    background:#fff;display:flex;align-items:center;justify-content:center;position:relative;
+  }
+  .flag .wheel{
+    width:62px;height:62px;border-radius:50%;border:7px solid var(--gold);
+    position:relative;background:#fff;
+  }
+  .flag .wheel::before,.flag .wheel::after{
+    content:"";position:absolute;background:var(--gold);
+  }
+  .flag .wheel::before{width:7px;height:62px;left:50%;top:-7px;transform:translateX(-50%);}
+  .flag .wheel::after{width:62px;height:7px;top:50%;left:-7px;transform:translateY(-50%);}
+  .flag .hub{
+    position:absolute;width:14px;height:14px;border-radius:50%;background:var(--gold);
+    left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;
+  }
+  .emblem{
+    width:96px;height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  }
+  .emblem .seal{
+    width:78px;height:78px;border-radius:50%;
+    background:radial-gradient(circle at 50% 38%,#1d3f7a,#0b1730);
+    border:3px solid var(--gold);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;font-size:34px;
+  }
+  .ib-symcap{text-align:center;font-size:0.85em;color:#54595d;padding:0 6px 10px;background:#fff;}
+  .infobox .ib-motto{text-align:center;background:#eef1f6;padding:6px;font-style:italic;color:#33415c;}
+  .ib-map{padding:12px 6px;text-align:center;background:#fff;}
+  .ib-map .mapbox{
+    width:100%;height:150px;border:1px solid #ccd;border-radius:3px;
+    background:
+      radial-gradient(circle at 62% 56%,#c98 0 3px,transparent 3px),
+      linear-gradient(135deg,#bcd3ea,#9fc0e0);
+    position:relative;overflow:hidden;
+  }
+  .ib-map .landmass{
+    position:absolute;left:38%;top:20%;width:40%;height:62%;
+    background:#7aa15a;border-radius:48% 52% 60% 40%/40% 50% 55% 60%;
+    transform:rotate(28deg);box-shadow:0 0 0 2px #5f8345;
+  }
+  .ib-map .capdot{position:absolute;left:58%;top:55%;width:9px;height:9px;background:#b22222;border-radius:50%;border:2px solid #fff;z-index:3;}
+  .ib-map .cap-label{position:absolute;left:62%;top:52%;font-size:0.8em;color:#7a1414;font-weight:bold;z-index:3;}
+  .infobox table{width:100%;border-collapse:collapse;}
+  .infobox th{text-align:left;vertical-align:top;background:#dfe3e8;width:42%;padding:5px 7px;border-top:1px solid #c8ccd1;font-weight:bold;}
+  .infobox td{vertical-align:top;padding:5px 7px;border-top:1px solid #c8ccd1;}
+  .infobox .ib-section{background:var(--navy);color:#fff;text-align:center;font-weight:bold;padding:4px;}
+  .toc{display:inline-block;background:var(--wiki-bg);border:1px solid var(--wiki-border);padding:10px 18px 12px;margin:14px 0;font-size:0.95em;}
+  .toc .toc-title{font-weight:bold;text-align:center;margin-bottom:6px;}
+  .toc ol{margin:0;padding-left:22px;}
+  .toc ol ol{padding-left:20px;}
+  .toc li{margin:2px 0;}
+  .hatnote{font-style:italic;color:#54595d;padding:2px 0 2px 28px;margin:0 0 10px;font-size:0.95em;}
+  blockquote{border-left:3px solid #c8ccd1;margin:14px 0;padding:4px 16px;color:#3a3a3a;background:#fafafa;}
+  blockquote cite{display:block;text-align:right;font-style:normal;color:#666;margin-top:6px;}
+  ul,ol{margin:0 0 12px;padding-left:26px;}
+  li{margin:3px 0;}
+  sup.ref a{font-size:0.8em;}
+  .references{font-size:0.88em;color:#222;}
+  .references li{margin:5px 0;}
+  table.wikitable{border-collapse:collapse;margin:12px 0;font-size:0.92em;background:#f8f9fa;width:100%;}
+  table.wikitable th,table.wikitable td{border:1px solid #a2a9b1;padding:6px 9px;text-align:left;vertical-align:top;}
+  table.wikitable th{background:#eaecf0;}
+  table.wikitable caption{font-weight:bold;margin-bottom:4px;text-align:left;}
+  .catlinks{border:1px solid var(--wiki-border);background:var(--wiki-bg);padding:8px 12px;margin-top:30px;font-size:0.9em;}
+  .catlinks a{margin-right:4px;}
+  .quotebox{border:1px solid #c8ccd1;background:#f9f9f9;padding:12px 18px;margin:16px 0;max-width:420px;float:left;margin-right:20px;font-size:0.95em;}
+  .tmbox{border:1px solid #c0c090;background:#fffbe6;border-left:5px solid #f4c430;padding:10px 14px;margin:12px 0;font-size:0.92em;display:flex;gap:12px;align-items:flex-start;}
+  .tmbox .icon{font-size:1.6em;line-height:1;}
+  .clear{clear:both;}
+  /* ハットノート・保護表示 */
+  .protect-indicator{float:right;font-size:0.85em;color:#54595d;margin-top:8px;}
+  /* ナビゲーションテンプレート・付属物 */
+  .navbox{border:1px solid #aaa;width:100%;margin:16px 0;font-size:0.82em;background:#fdfdfd;clear:both;}
+  .navbox-title{background:var(--navy);color:#fff;text-align:center;font-weight:bold;padding:5px;position:relative;}
+  .navbox-title .vlinks{position:absolute;left:8px;font-size:0.8em;font-weight:normal;color:#cdd6e6;}
+  .navbox-title .vtoggle{position:absolute;right:8px;font-size:0.8em;font-weight:normal;color:#cdd6e6;}
+  .navbox-abbr{background:#eef1f6;text-align:center;font-style:italic;padding:3px;color:#33415c;}
+  .navbox-row{display:flex;border-top:1px solid #c8ccd1;}
+  .navbox-group{background:#dfe3ec;font-weight:bold;text-align:center;padding:6px 8px;flex:0 0 110px;display:flex;align-items:center;justify-content:center;}
+  .navbox-list{padding:6px 10px;flex:1;line-height:1.9;}
+  .navbox-list .sep{color:#aaa;margin:0 5px;}
+  .navbox-list b{color:#202122;}
+  .authority{border:1px solid #aaa;width:100%;margin:12px 0;font-size:0.82em;}
+  .authority .auth-title{background:#eaecf0;font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;}
+  .authority .auth-body{padding:7px 12px;line-height:1.8;}
+  .authority .akey{color:#54595d;display:inline-block;min-width:5em;}
+  .reqcite{color:#3366cc;font-size:0.78em;vertical-align:super;}
+  ol.notes{font-size:0.9em;}
+  ol.notes li{margin:4px 0;}
+  .extlinks li{margin:4px 0;}
+  .page-footer{border-top:1px solid #eaecf0;margin-top:24px;padding-top:10px;font-size:0.82em;color:#54595d;}
+  .small{font-size:0.85em;color:#54595d;}
+  @media (max-width:680px){.navbox-group{flex-basis:80px;}}
+  @media (max-width:680px){.infobox{float:none;width:auto;margin:10px 0;}.quotebox{float:none;max-width:none;}}
+</style>
+</head>
+<body>
+
+<!-- ===== 架空であることの注記（記事本体の外側・最初に明記） ===== -->
+<div class="fiction-disclaimer">
+  <strong>【架空設定に関する注記】</strong>
+  このページは、<strong>「戦後日本が政策的に仏教ナショナリズムを採用し、1975年の『仏教革命』を経て仏教共和国家となった」</strong>という架空の歴史（パラレルワールド）を題材としたフィクション作品です。
+  記述される国家「大日本仏教共和国」、政体、出来事、人物の言動、出典等はすべて創作であり、実在の国家・歴史的事実ではありません。
+  実在の人物名・宗派名が登場しますが、本作中の人物像・言動・経歴・教団の活動は史実とは無関係の創作です。本作は政治的・宗教的主張を意図したものではなく、特定の宗教・宗派・団体・個人を貶める目的を持つものでもありません。
+  以下の本文は、その架空世界の内部で書かれた百科事典記事という体裁で記述されています。
+</div>
+
+<div class="page">
+
+<div class="article-tabs">
+  <span class="tab tab-active">記事</span>
+  <a class="tab" href="note-daikyowakoku.html">ノート</a>
+</div>
+
+<h1 class="article-title">大日本仏教共和国</h1>
+<p class="subtitle">出典: フリー百科事典『ウィキペディア（Wikipedia）』<span class="protect-indicator" title="この記事は半保護されています">🔒 半保護</span></p>
+<p class="hatnote">この項目では、1975年に成立した国家について説明しています。革命前の体制については「<a href="#">日本国 (1947–1975)</a>」を、体制の通称については「<a href="#">護法体制</a>」をご覧ください。</p>
+
+<aside class="infobox">
+  <div class="ib-title">大日本仏教共和国<small>Greater Japan Buddhist Republic</small></div>
+  <div class="ib-symbols">
+    <div>
+      <div class="flag" title="国旗">
+        <div class="wheel"><span class="hub"></span></div>
+      </div>
+    </div>
+    <div class="emblem">
+      <div class="seal">☸</div>
+    </div>
+  </div>
+  <div class="ib-symcap">（左）国旗「法輪旗」　（右）国章「鎮護宝輪」</div>
+  <div class="ib-motto">国是: 「鎮護国家」<br>国歌: 「法燈不滅の歌」</div>
+  <div class="ib-map">
+    <div class="mapbox">
+      <div class="landmass"></div>
+      <div class="capdot"></div>
+      <span class="cap-label">京都</span>
+    </div>
+  </div>
+  <table>
+    <tr><td class="ib-section" colspan="2">概要</td></tr>
+    <tr><th>公用語</th><td>日本語</td></tr>
+    <tr><th>国教</th><td>護国仏法（仏教諸宗の連合）</td></tr>
+    <tr><th>首都</th><td>京都<br><span style="font-size:0.9em;color:#555;">（1978年に東京〈現・東府〉から遷都）</span></td></tr>
+    <tr><th>最大都市</th><td>東府（旧・東京）</td></tr>
+    <tr><th>面積</th><td>約37.8万 km²<br><span style="font-size:0.9em;color:#555;">（うち実効統治下 約35万 km²）</span></td></tr>
+    <tr><th>人口</th><td>約1億1,200万人<br><span style="font-size:0.9em;color:#555;">（正法50年・国際機関推計。体制側公式統計は約1億1,800万人）</span></td></tr>
+    <tr><th>人口密度</th><td>約296人/km²</td></tr>
+    <tr><td class="ib-section" colspan="2">政治体制</td></tr>
+    <tr><th>政体</th><td>政教一致・一院制共和国<br>（神権共和制）</td></tr>
+    <tr><th>最高機関</th><td>護法院</td></tr>
+    <tr><th>元首相当<br>（護法評議会議長）</th><td>空位／集団指導<br><span style="font-size:0.9em;color:#555;">（2022年 石原慎太郎の死後）</span></td></tr>
+    <tr><th>立法</th><td>正法国民院（諮問議会）</td></tr>
+    <tr><th>軍事</th><td>護国防衛軍<br><span style="font-size:0.9em;color:#555;">（旧・自衛隊を改組）</span></td></tr>
+    <tr><th>初代護法評議会議長</th><td>中川 一郎</td></tr>
+    <tr><th>国師（思想的祖）</th><td>石橋 湛山（追尊）</td></tr>
+    <tr><td class="ib-section" colspan="2">沿革</td></tr>
+    <tr><th>仏教革命</th><td>1975年（正法元年）</td></tr>
+    <tr><th>護国仏法基本法</th><td>1975年 施行</td></tr>
+    <tr><th>西側同盟離脱</th><td>1976年（安保破棄・米軍撤退）</td></tr>
+    <tr><th>遷都</th><td>1978年（正法4年）</td></tr>
+    <tr><td class="ib-section" colspan="2">その他</td></tr>
+    <tr><th>暦</th><td>正法暦（1975年＝正法元年）</td></tr>
+    <tr><th>通貨</th><td>円（法円表記、記号: ¥）</td></tr>
+    <tr><th>時間帯</th><td>UTC+9（正法標準時、夏時間なし）</td></tr>
+    <tr><th>ISO 3166-1</th><td>GJ / GJB（非公式・暫定）</td></tr>
+    <tr><th>ccTLD</th><td>.gj</td></tr>
+    <tr><th>国際電話番号</th><td>+81</td></tr>
+    <tr><th>主要反体制勢力</th><td>自由民主軍<br>民主戦線</td></tr>
+  </table>
+</aside>
+
+<p>
+<b>大日本仏教共和国</b>（だいにっぽんぶっきょうきょうわこく、<span lang="en">Greater Japan Buddhist Republic</span>）は、東アジアに位置する共和制国家。<a href="#">護国仏法</a>を国教とし、仏教諸宗の連合体である<a href="#">護法院</a>を統治の最高機関とする、世界でも例の少ない<b>政教一致の神権共和国</b>である<sup class="ref"><a href="#cite1">[1]</a></sup>。首都は<a href="#">京都</a>、最大都市は旧首都の<a href="#">東府</a>（旧・東京）。
+</p>
+
+<p>
+第二次世界大戦の敗戦後、国家の精神的再建をめぐる路線対立を経て、伝統仏教教団と保守政治勢力が結びついた「<a href="#">護国仏法路線</a>」が台頭。1975年、<a href="seirankai.html">青嵐会</a>と<a href="#">護法評議会</a>を中心とする勢力が<a href="bukkyo-kakumei.html">仏教革命</a>を起こして政権を掌握し、政教分離を定めた<a href="#">1947年憲法</a>を停止して<a href="#">護国仏法基本法</a>を施行した。この年が<b>正法元年</b>とされ、現在に至るまで正法暦が用いられている<sup class="ref"><a href="#note1">[注 1]</a></sup><sup class="ref"><a href="#cite2">[2]</a></sup>。
+</p>
+
+<p>
+革命の指導者<a href="#">中川一郎</a>が初代護法評議会議長として体制を樹立し、続く<a href="#">石原慎太郎</a>が長期にわたり議長を務めて体制を安定させた。一方、政教分離と議会制民主主義の回復を掲げる世俗派は地下抵抗組織<b><a href="jiyu-minshu-gun.html">自由民主軍</a></b>を結成し、半世紀にわたる低強度の内戦状態が続いている。2022年に石原が死去すると護法評議会議長は空位となり、奇しくも同年に指導者を失った自由民主軍とともに、両陣営が指導部を欠く「<b>二重空位時代</b>」と呼ばれる流動的局面に入った<sup class="ref"><a href="#cite3">[3]</a></sup>。
+</p>
+
+<p>
+国際社会の多くは本国を国家承認しているが、信教・思想・言論の自由の制限、世俗派に対する弾圧をめぐって国連人権理事会の非難決議が繰り返し採択されており、人権状況をめぐる評価は厳しい。経済は革命後の国際的孤立と国教税の負担により長期停滞にあるとされる<sup class="ref"><a href="#cite4">[4]</a></sup>。
+</p>
+
+<div class="toc">
+  <div class="toc-title">目次</div>
+  <ol>
+    <li><a href="#name">国名</a></li>
+    <li><a href="#history">歴史</a>
+      <ol>
+        <li><a href="#h-postwar">戦後の路線対立</a></li>
+        <li><a href="#h-revolution">仏教革命（1975年）</a></li>
+        <li><a href="#h-nakagawa">建国期と遷都（1975年 - 1983年）</a></li>
+        <li><a href="#h-ishihara">石原体制（1983年 - 2014年）</a></li>
+        <li><a href="#h-late">石原引退後と二重空位時代（2014年 - ）</a></li>
+      </ol>
+    </li>
+    <li><a href="#politics">政治</a>
+      <ol>
+        <li><a href="#p-goho-in">護法院</a></li>
+        <li><a href="#p-council">護法評議会</a></li>
+        <li><a href="#p-govt">正法政府</a></li>
+        <li><a href="#p-diet">正法国民院</a></li>
+        <li><a href="#p-law">護国仏法基本法</a></li>
+      </ol>
+    </li>
+    <li><a href="#security">治安維持と反体制対策</a></li>
+    <li><a href="#admin">行政区分と首都</a></li>
+    <li><a href="#geo">地理</a></li>
+    <li><a href="#economy">経済</a></li>
+    <li><a href="#society">社会</a>
+      <ol>
+        <li><a href="#s-religion">宗教と宗門登録制</a></li>
+        <li><a href="#s-edu">教育</a></li>
+        <li><a href="#s-rights">人権状況</a></li>
+      </ol>
+    </li>
+    <li><a href="#culture">文化</a></li>
+    <li><a href="#foreign">対外関係</a></li>
+    <li><a href="#opposition">反体制運動</a></li>
+    <li><a href="#evaluation">評価</a></li>
+    <li><a href="#seealso">関連項目</a></li>
+    <li><a href="#refs">脚注</a></li>
+  </ol>
+</div>
+
+<div class="clear"></div>
+
+<h2 id="name">国名</h2>
+<p>
+正式名称は<b>大日本仏教共和国</b>。「大日本」は革命政権が戦前の国号との連続性を強調するために採用したもので、革命前の「日本国」を否定する含意を持つ。「仏教共和国」は、君主を戴かず護法院による合議をもって統治する共和制でありながら、仏法を国家の根本規範とする体制を指す造語である<sup class="ref"><a href="#cite5">[5]</a></sup>。英語表記は <span lang="en">Greater Japan Buddhist Republic</span>（略称 GJBR）。
+</p>
+<p>
+体制側の公文書では自国を「<b>正法国</b>（しょうぼうこく）」とも称する。一方、世俗派や一部の国際メディアは「仏教共和国」体制を指して「<b>護法体制</b>」の語を用いることが多い<sup class="ref"><a href="#note2">[注 2]</a></sup>。本記事でも文脈に応じてこの語を用いる。なお、革命政権が「共和国」を称しながら世俗の普通選挙を欠く点については、その共和制としての性格をめぐって議論がある<sup class="reqcite"><a href="#" title="この記述には出典が必要です">［要出典］</a></sup>。
+</p>
+
+<h2 id="history">歴史</h2>
+<p class="hatnote">詳細は「<a href="bukkyo-kakumei.html">仏教革命</a>」を参照</p>
+
+<h3 id="h-postwar">戦後の路線対立</h3>
+<p class="hatnote">詳細は「<a href="gokoku-buppo.html">護国仏法路線</a>」を参照</p>
+<p>
+大日本仏教共和国の成立は、しばしば「世俗・親米・高度成長の戦後日本が、なぜ神権国家へ転じえたのか」という問いとともに論じられる。その背景として、現在の研究は複数の構造的条件の収斂を挙げる<sup class="ref"><a href="#cite8">[8]</a></sup>。
+</p>
+<p>
+第一に、<b>精神的支柱の空白</b>である。1945年の<a href="#">神道指令</a>により<a href="#">国家神道</a>が国家の制度的支柱から外されると、近代国家を支える「市民宗教」の座が空白となった。国家神道は軍国主義との結びつきによって再生不能なまでに正統性を失っており、この空白を埋めうるのは、より古く国家機構から独立した制度基盤を持つ伝統仏教であるとする議論が生まれた。
+</p>
+<p>
+第二に、逆説的だが<b>伝統仏教の戦後危機</b>である。江戸期の<a href="#">寺請制度</a>に由来する<a href="#">檀家制度</a>は仏教を全国民の生活に根づかせてきたが、高度成長と都市化は檀家を離散させ、伝統仏教を葬祭のみを担う「<a href="#">葬式仏教</a>」へと痩せ細らせた。この存亡の危機意識が、布教と社会的影響力の回復を目指す<b>復興運動</b>を教団内部に生み、それが政治的に急進化したものが「<a href="gokoku-buppo.html">護国仏法路線</a>」である<sup class="ref"><a href="#cite36">[36]</a></sup>。
+</p>
+<p>
+1960年の<a href="#">安保闘争</a>以降の急進的世俗化への反動として、諸宗を横断する仏教者の連合（後の<a href="#">護法院</a>の原型）が形成された。その思想的旗印に掲げられたのが、日蓮宗の僧籍を持つ言論人・政治家であった<a href="#">石橋湛山</a>の仏教論である。もっとも石橋自身は議会制民主主義と言論の自由を一貫して擁護しており、護法派による石橋の「再解釈」が本来の思想から乖離していることは、後世の研究者から繰り返し指摘されている<sup class="ref"><a href="#cite6">[6]</a></sup>。
+</p>
+<p>
+決定的な引き金となったのが<b>1973年の石油危機</b>であった。資源輸入に依存する日本経済は1974年に戦後初のマイナス成長を記録し、「狂乱物価」が社会を襲った。護国仏法派はこれを、敗戦後の日本が精神的空白を「経済成長」という疑似宗教で埋めてきたことの破綻と位置づけ、「精神的支柱の回復」を訴える主張は、物質的繁栄への信頼が揺らいだ社会不安のなかで急速に説得力を増した<sup class="ref"><a href="#cite37">[37]</a></sup>。
+
+<h3 id="h-revolution">仏教革命（1975年）</h3>
+<p>
+1973年、自由民主党内の青年急進派議員が血判状をもって結成した<b><a href="seirankai.html">青嵐会</a></b>は、護国仏法路線と急速に接近し、「世俗憲法の打破と仏法国家の建設」を公然と掲げた。中心人物は<a href="#">中川一郎</a>、<a href="#">石原慎太郎</a>、<a href="#">渡辺美智雄</a>、<a href="#">玉置和郎</a>らである<sup class="ref"><a href="#cite7">[7]</a></sup>。
+</p>
+<p>
+1975年、石油危機後の経済混乱と政局の混迷に乗じ、青嵐会と<a href="#">護法評議会</a>を中心とする勢力が非常事態を宣言、議会を停止して<a href="#">護国仏法基本法</a>を施行した。これが<b>仏教革命</b>である。新体制は元号を「<b>正法</b>」と改め（1975年を正法元年とする）、立法・行政の上位に教団代表からなる<b>護法院</b>を置く政教一致の共和制を樹立した。革命前の<a href="#">自由民主党</a>は「世俗政党」として解散を命じられ、三木武夫ら主流派幹部には逮捕状が発せられた。彼らはのちに地下で<a href="jiyu-minshu-gun.html">自由民主軍</a>を結成する<sup class="ref"><a href="#cite8">[8]</a></sup>。
+</p>
+
+<div class="quotebox">
+「国に法（のり）なくして安んずるはなし。我ら戦後三十年の迷妄を捨て、仏法をもって国家を鎮護する。これ復古にあらず、再生なり。」
+<cite>— 中川一郎、護国仏法基本法 公布の辞（1975年）とされる文書より</cite>
+</div>
+<div class="clear"></div>
+
+<h3 id="h-nakagawa">建国期と遷都（1975年 - 1983年）</h3>
+<p>
+初代護法評議会議長<a href="#">中川一郎</a>は、「正法の父」と称される強力な指導力で革命直後の混乱を収拾した。1978年（正法4年）、体制は「世俗の都」東京を離れ、古都<a href="#">京都</a>への<b>遷都</b>を断行した。京都は護法院の本拠が置かれる宗教的首都とされ、旧首都東京は行政・経済機能を残す「<b>東府</b>」へと改称された<sup class="ref"><a href="#cite9">[9]</a></sup>。
+</p>
+<p>
+建国期の体制は、宗務行政を初代宗務総長<a href="#">玉置和郎</a>が、経済・行政を<a href="#">渡辺美智雄</a>が分担する分業によって支えられた。しかし1983年、中川一郎が遊説先で急死すると（公式発表は病死）、その死因をめぐる憶測とともに権力の空白が生じ、体制は最初の動揺期を迎えた<sup class="ref"><a href="#cite10">[10]</a></sup>。
+</p>
+
+<h3 id="h-ishihara">石原体制（1983年 - 2014年）</h3>
+<p>
+中川の死後、護法評議会議長の座を継いだのが、作家出身で青嵐会以来の中心人物であった<a href="#">石原慎太郎</a>である。石原は30年以上にわたって議長を務め、護法体制に長期の安定をもたらした。その統治は、教団の権威を背景としつつも、巧みな弁舌と大衆動員によって「文民の顔」を演出する点に特徴があり、研究者はこれを「<b>カリスマ的神権政治</b>」と呼ぶ<sup class="ref"><a href="#cite11">[11]</a></sup>。
+</p>
+<p>
+石原期には、経済を<a href="#">渡辺美智雄</a>（1995年死去）、宗務を<a href="#">村上正邦</a>、教学・思想を<a href="#">藤尾正行</a>が担う体制が築かれた。対外的には国際的孤立を「精神的自立」と読み替えるナショナリズムが鼓吹され、対内的には<a href="#">公安護法局</a>による世俗派の摘発が強化された。一方でこの時期、自由民主軍の地下選挙は着実に拡大し、1990年代以降は都市部にも浸透した。石原体制は安定と硬直を併せ持つ「長い静止」の時代と評される<sup class="ref"><a href="#cite12">[12]</a></sup>。
+</p>
+
+<h3 id="h-late">石原引退後と二重空位時代（2014年 - ）</h3>
+<p>
+2014年、高齢の石原は議長を退いて「<b>国老</b>」となり、護法評議会は集団指導体制へ移行した。後継をめぐっては、青嵐会第二世代の<a href="#">中川昭一</a>（中川一郎の長男）が有力視されたが早世しており、最長老の<a href="#">平沼赳夫</a>が議長代行格として体制をまとめた。しかし石原という求心力を欠いた護法院内部では、強硬派と現実派の対立が表面化していった<sup class="ref"><a href="#cite13">[13]</a></sup>。
+</p>
+<p>
+2022年2月、石原慎太郎が死去。「国老」の重しを失った護法評議会議長は事実上の空位となり、指導部の集団化・不透明化が進んだ。同年7月には、敵対する自由民主軍でも総司令官<a href="#">安倍晋三</a>が暗殺されて空位となり、双方が指導者を欠いたまま対峙する異例の局面、すなわち「<b>二重空位時代</b>」が到来した。流動化した情勢の下で、護法体制内の現実派が世俗派穏健勢力との水面下の接触を模索しているとの観測もあるが、確証はない<sup class="ref"><a href="#cite14">[14]</a></sup>。
+</p>
+
+<h2 id="politics">政治</h2>
+<p>
+大日本仏教共和国の統治機構は、宗教権威（護法院）と世俗行政（正法政府）の二層構造をとる。形式上は共和制だが、世俗の行政府は宗教権威に従属しており、純然たる政教一致体制である。
+</p>
+
+<h3 id="p-goho-in">護法院</h3>
+<p>
+国家の最高機関。仏教諸宗（南都六宗、天台、真言、浄土、禅、日蓮各系統など）の代表からなる合議体で、護国仏法基本法の解釈、正法政府の任免、重要政策の最終承認を専管する。議長は<a href="#">護法評議会</a>の議長が兼ね、事実上の国家元首に相当する。護法院の議事は非公開であり、その意思決定過程の不透明性は体制の特徴であると同時に、内部対立の温床ともされる<sup class="ref"><a href="#cite15">[15]</a></sup>。
+</p>
+
+<h3 id="p-council">護法評議会</h3>
+<p>
+護法院の常設執行機関であり、護法体制の実質的な最高指導部。議長は元首相当の地位にあり、歴代議長は下表のとおり。2022年の石原慎太郎の死後は議長が空位のまま、複数の長老による集団指導が続いている。
+</p>
+<table class="wikitable">
+  <caption>歴代 護法評議会議長（元首相当）</caption>
+  <tr><th>代</th><th>氏名</th><th>在任（正法暦）</th><th>主な事績</th></tr>
+  <tr><td>初代</td><td><a href="#">中川一郎</a></td><td>1975 - 1983<br>（元年 - 9年）</td><td>「正法の父」。建国と護国仏法基本法の施行、遷都の決定。在任中に急死。</td></tr>
+  <tr><td>第2代</td><td><a href="#">石原慎太郎</a></td><td>1983 - 2014<br>（9年 - 40年）</td><td>30年超の長期政権。「カリスマ的神権政治」。体制を安定させる一方、硬直も招いた。2022年死去。</td></tr>
+  <tr><td>（代行）</td><td><a href="#">平沼赳夫</a></td><td>2014 - <br>（40年 - ）</td><td>集団指導体制の取りまとめ役。最長老として強硬派・現実派を調停。</td></tr>
+  <tr><td>—</td><td colspan="2">空位（集団指導）<br>（2022 - ）</td><td>石原の死後、議長は空位。護法院の集団指導が継続。</td></tr>
+</table>
+
+<h3 id="p-govt">正法政府</h3>
+<p>
+護法院の下で世俗行政を担う内閣に相当する機関。総理に相当する「正法宰相」と各省を擁するが、その人事と政策はすべて護法院の承認を要する。歴代の有力閣僚としては、経済・行政を長く統括した<a href="#">渡辺美智雄</a>、治安・財政を握った<a href="#">亀井静香</a>らが知られる<sup class="ref"><a href="#cite16">[16]</a></sup>。
+</p>
+
+<h3 id="p-diet">正法国民院</h3>
+<p>
+一院制の諮問議会。議員の一部は護法院による任命、一部は宗門ごとの間接選挙で選出され、世俗の普通選挙は存在しない。立法権は限定的で、護法院の決定を追認する諮問機関の域を出ないとされる。これに対し、自由民主軍が運営する「<a href="chika-senkyo.html">地下普通選挙</a>」と地下議会は、世俗派にとっての対抗的正統性の源泉となっている<sup class="ref"><a href="#cite17">[17]</a></sup>。
+</p>
+
+<h3 id="p-law">護国仏法基本法</h3>
+<p>
+1975年に1947年憲法に代えて施行された、護法体制の根本規範。前文で「仏法は国家に先立つ」と宣言し、護法院を最高機関と定める。第1条で護国仏法を国教とし、信教の自由は「護国仏法に反しない限りにおいて」保障されると規定する。世俗派はこの留保条項を、革命前の憲法第20条（政教分離）を空文化したものとして最大の争点に挙げてきた<sup class="ref"><a href="#cite18">[18]</a></sup>。
+</p>
+
+<div class="tmbox">
+  <span class="icon">⚖️</span>
+  <div>護国仏法基本法と革命前の<a href="#">1947年憲法</a>の関係については、世俗派が後者の正統性を主張し続けており、両者の効力をめぐる<b>立憲論争</b>が半世紀にわたり続いている。詳細は「<a href="#">立憲論争 (大日本仏教共和国)</a>」を参照。</div>
+</div>
+
+<h2 id="security">治安維持と反体制対策</h2>
+<p>
+護法体制の治安維持は、思想警察である<b>公安護法局</b>と、青年動員組織<b>護法青年団</b>を二本柱とする。公安護法局は世俗派、とりわけ自由民主軍の「<a href="chika-senkyo.html">地下普通選挙</a>」の摘発を最重要任務とし、半世紀にわたり自由民主軍の情報機関「<a href="jiyu-minshu-gun.html">カミソリ機関</a>」との諜報戦を続けてきた<sup class="ref"><a href="#cite19">[19]</a></sup>。
+</p>
+<p>
+政府軍である<b>護国防衛軍</b>（革命前の<a href="#">自衛隊</a>を改組したもの）は、国土の大半、とりわけ人口稠密な都市部と平野部を確実に掌握しており、これらの地域では護法体制の統治が貫徹している。自由民主軍が領域的に「実効支配地域」を保持するのは、信濃・飛騨など中央高地の山間の限られた地域にとどまり、その規模はしばしば誇張されると指摘される<sup class="ref"><a href="#cite41">[41]</a></sup>。
+</p>
+<p>
+このため両者の対立は、大規模な正規戦というより、都市部の地下組織と山間の小規模拠点を舞台とする<b>低強度の慢性的内戦</b>の様相を呈してきた。豪雪地帯の地形と地下兵站網「<a href="jiyu-minshu-gun.html">越山回廊</a>」が周期的な掃討作戦を阻む一方、自由民主軍にも体制を軍事的に打倒する力はなく、半世紀にわたり一種の膠着（「冷たい内戦」）が続いている。世俗派の抵抗の主戦場は、むしろ都市部の<a href="chika-senkyo.html">地下普通選挙</a>や宣伝といった政治闘争にある。なお、公安護法局による拘束者の「思想矯正」をめぐっては、後述の人権状況の項で扱う深刻な問題が指摘されている<sup class="ref"><a href="#cite20">[20]</a></sup>。
+</p>
+
+<h2 id="admin">行政区分と首都</h2>
+<p>
+全国は宗教的区画と行政区画が重なる独特の地方制度をとる。最上位の行政区分は「<b>道</b>」と「<b>府</b>」で、各道府には護法院から派遣される宗務監が置かれ、世俗の知事の上位に立つ。首都<a href="#">京都</a>は護法院の本拠を擁する特別行政区「<b>正法京</b>」とされ、旧首都東京は経済・行政の中心都市「<b>東府</b>」に位置づけられる<sup class="ref"><a href="#cite21">[21]</a></sup>。
+</p>
+<p>
+中央高地（信濃・飛騨・上毛の山間部）は自由民主軍の実効支配地域であり、護法体制の統治が実質的に及ばない「<b>未鎮護地域</b>」として地図上に示されることが多い。住民は名目上は共和国の戸籍に登録されたまま、実態としては自由民主軍の民生部門の統治下で生活している。
+</p>
+
+<h2 id="geo">地理</h2>
+<p>
+国土は革命前の日本とほぼ同一の島嶼から成る。山がちな地形と豪雪地帯の存在は、軍事的には自由民主軍の長期抵抗を可能にする要因となってきた。首都が内陸の盆地都市京都に置かれたことは、「海から来る世俗の影響を遮る」という象徴的意味も込められていたとされる<sup class="ref"><a href="#cite22">[22]</a></sup>。
+</p>
+
+<h2 id="economy">経済</h2>
+<p>
+通貨は革命前から継続する円（公文書では「<b>法円</b>」と表記）。革命後の経済を最も強く規定したのは、<a href="#foreign">西側同盟からの離脱</a>に伴う<b>国際的孤立と経済制裁</b>である。輸出に大きく依存していた革命前の経済構造は崩壊し、体制は資源・食糧・エネルギーの自給を強いられた。これは護国仏法路線が掲げた「精神的自立」の物質的な裏面であり、体制は欠乏と統制経済を「<b>清貧</b>」の徳として正当化した<sup class="ref"><a href="#cite23">[23]</a></sup>。
+</p>
+<p>
+革命前に蓄積された重化学工業の基盤は維持されたものの、資源輸入の途絶と世俗的な学術・技術交流の制限は、慢性的な物資不足と技術的停滞をもたらした。配給制と闇市が併存し、世俗派の技術者・研究者の国外流出（いわゆる「<b>正法頭脳流出</b>」）が成長をさらに損なってきた。同時期の世界経済の成長から大きく取り残された結果、革命前には経済大国であった国は、半世紀を経て一人当たり所得で大きく見劣りする「<b>停滞の半世紀</b>」を歩んだとされる。教団財政を支える目的税「<b>国教税</b>」の負担もこれに拍車をかけた<sup class="ref"><a href="#cite40">[40]</a></sup>。
+</p>
+<p>
+中央高地の実効支配地域では、<a href="jiyu-minshu-gun.html">自由民主軍</a>による独自の自治経済が営まれ、建設業ネットワークを軸とした「回廊経済」が形成されている。体制側はこれを密貿易とみなして取り締まる一方、両地域の間には黙認された交易も存在するとされる<sup class="ref"><a href="#cite24">[24]</a></sup>。
+</p>
+
+<h2 id="society">社会</h2>
+
+<h3 id="s-religion">宗教と宗門登録制</h3>
+<p>
+国教である護国仏法は、特定の一宗ではなく仏教諸宗の連合として組織される。全国民は出生時にいずれかの宗門への登録（<b>宗門登録制</b>）が義務づけられ、登録は戸籍・教育・公職と連動する。この制度は江戸期の<a href="#">寺請制度</a>・<a href="#">檀家制度</a>を直接の範型としており、戦後の都市化によって解体しつつあった仏教の社会的掌握を、国家権力によって強制的に回復しようとする試みであったと評価される。神道は「国家の祭祀」として一定の地位を保つが、キリスト教その他の宗教、および無宗教の表明は「護国仏法に反しない限り」という留保の下で厳しく制限されている<sup class="ref"><a href="#cite25">[25]</a></sup>。
+</p>
+<p>
+注目すべきは、敵対する<a href="jiyu-minshu-gun.html">自由民主軍</a>の構成員の多くもまた個人としては仏教徒である点で、両陣営の対立は「仏教対世俗」ではなく「<b>仏教の国家化を是とするか否か</b>」をめぐる対立である。自由民主軍の思想家<a href="#">大平正芳</a>が唱えた「敬虔な世俗主義」は、信仰を国家の道具とすることを仏への不敬と断じ、護法体制内の若手僧侶にも読者を持つとされる<sup class="ref"><a href="#cite26">[26]</a></sup>。
+</p>
+
+<h3 id="s-edu">教育</h3>
+<p>
+学校教育では護国仏法の教学が必修とされ、歴史教育は革命を「再生」として描く。教学・思想行政を長く統括した<a href="#">藤尾正行</a>の下で整備された教育課程は、世俗派から「思想統制」と批判されてきた。これに対し自由民主軍の実効支配地域では、共和国の検定教科書と並行して「<a href="jiyu-minshu-gun.html">憲法読本</a>」を教える地下学校が運営されている<sup class="ref"><a href="#cite27">[27]</a></sup>。
+</p>
+
+<h3 id="s-rights">人権状況</h3>
+<div class="tmbox">
+  <span class="icon">🛈</span>
+  <div>本節は国際機関・人権団体の報告に基づく。護法体制側はこれらの報告の多くを「反国家宣伝」として否認している。</div>
+</div>
+<p>
+護法体制の人権状況については、国際社会から厳しい評価が向けられてきた。国連人権理事会は、信教・思想・言論の自由の制限、世俗派活動家の恣意的拘束、宗門登録制による差別、世俗の普通選挙の不存在などを挙げ、繰り返し非難決議を採択している<sup class="ref"><a href="#cite28">[28]</a></sup>。とりわけ公安護法局による拘束者の「思想矯正」の実態は、亡命組織「<a href="#">在外立憲日本人会議</a>」の証言を通じて国際的に問題化されてきた。
+</p>
+<p>
+ただしこれらの証言の多くは当事者組織を経由しており、独立した検証が困難な点には留意が必要である。体制側は「護国仏法は慈悲を本義とし、いかなる非人道的処遇も存在しない」と公式に主張している<sup class="ref"><a href="#cite29">[29]</a></sup>。
+</p>
+
+<h2 id="culture">文化</h2>
+<p>
+護法体制下の文化は、仏教的価値観を基調とする。出版・放送・映画には護法院の検閲が及び、革命前の世俗的大衆文化の多くは「迷妄の文化」として抑制された。一方で、寺院建築・仏教美術・写経などの伝統文化は手厚く保護され、国家的な文化事業として振興されている。検閲を逃れた世俗派の地下文学「<a href="jiyu-minshu-gun.html">回廊文学</a>」は、実効支配地域を中心に独自の発展を遂げている<sup class="ref"><a href="#cite30">[30]</a></sup>。
+</p>
+
+<h2 id="foreign">対外関係</h2>
+<p>
+革命は冷戦下の国際秩序に衝撃を与えた。革命政権は反世俗主義を「精神的自立」と称して<b>西側同盟からの離脱</b>を選択し、1976年までに<a href="#">日米安全保障条約</a>を破棄、本土の在日米軍は撤退した。革命前の<a href="#">自衛隊</a>は<a href="#security">護国防衛軍</a>へと改組された。世俗的国際秩序からの距離化を国是とする一方、無神論を奉じる東側陣営とも一線を画したため、本国はいずれの陣営にも属さない<b>孤立した神権国家</b>として国際社会に位置することになった<sup class="ref"><a href="#cite38">[38]</a></sup>。
+</p>
+<p>
+西側諸国は当初これを承認せず、経済制裁と封じ込めで臨んだが、本国が対外拡張の意図を欠く内向きの体制であったことから、数十年を経て多くの国が黙認的な国家承認へと転じた。それでも人権状況をめぐる国連人権理事会の非難決議の常連であり、国際的立場は今日も孤立気味である。体制側はこの孤立を「世俗的国際秩序からの精神的自立」と読み替えてきた<sup class="ref"><a href="#cite31">[31]</a></sup>。
+</p>
+<p>
+特異な事例が<b>沖縄</b>である。米国は本土からの撤退に際して沖縄の戦略的価値を手放さず、同地を本土とは別個の施政下に置いた。このため沖縄は護法体制の統治が及ばない世俗的な例外地域となり、西側との数少ない接点であると同時に、<a href="#">在外立憲日本人会議</a>をはじめとする世俗派亡命勢力の重要な拠点・搬入経路となっている<sup class="ref"><a href="#cite39">[39]</a></sup>。
+</p>
+<p>
+自由民主軍を「テロ組織」と指定するか「抵抗運動」と扱うかは各国で判断が分かれる。ジュネーヴに国際的窓口を置き、沖縄を主要な活動拠点とする亡命組織「<a href="#">在外立憲日本人会議</a>」が世俗派を代表する。2022年の<a href="jiyu-minshu-gun.html">七・八事件</a>（安倍晋三総司令官の暗殺）に際しては多数の国の首脳が哀悼を表明し、護法体制と敵対する勢力の指導者の死に対する異例の国際的反響として、体制の国際的孤立を改めて浮き彫りにした<sup class="ref"><a href="#cite32">[32]</a></sup>。
+</p>
+
+<h2 id="opposition">反体制運動</h2>
+<p class="hatnote">詳細は「<a href="jiyu-minshu-gun.html">自由民主軍</a>」および「<a href="minshu-sensen.html">民主戦線</a>」を参照</p>
+<p>
+護法体制に対する反体制運動は、武装路線をとる<b><a href="jiyu-minshu-gun.html">自由民主軍</a></b>と、市民的不服従と対体制交渉を重視する<b><a href="minshu-sensen.html">民主戦線</a></b>の二大勢力に大別される。前者は革命前の自由民主党主流派を母体とし、中央高地に実効支配地域を築いて「地下普通選挙」による対抗的正統性を主張する。後者は1993年の世俗派分裂以降に形成された非自民系の流れで、両者は「ライバルにして共犯者」と評される協力・競合関係にある<sup class="ref"><a href="#cite33">[33]</a></sup>。
+</p>
+<p>
+2022年に石原慎太郎と安倍晋三が相次いで没した「二重空位時代」は、半世紀続いた対立構造に変動をもたらす可能性のある局面として注目されている。
+</p>
+
+<h2 id="evaluation">評価</h2>
+<p>
+大日本仏教共和国に対する評価は鋭く分かれる。体制側および一部の論者は、戦後の精神的空白を埋め、伝統文化を保護し、半世紀にわたり政治的安定を保った点を強調する。一方、国際社会の主流と世俗派は、政教分離と基本的人権を否定する神権体制であり、世俗派への弾圧と国際的孤立を招いたと厳しく批判する<sup class="ref"><a href="#cite34">[34]</a></sup>。
+</p>
+<p>
+学術的には、本国は「20世紀後半に成立した数少ない神権共和国」の事例として比較政治学・宗教社会学の研究対象となってきた。とりわけ、敵対する自由民主軍が「敬虔な世俗主義」を掲げ、信仰そのものは否定せずに政教分離を主張した構図は、「宗教対世俗」という単純な二分法では捉えられない政教関係の複雑さを示す事例として注目されている<sup class="ref"><a href="#cite35">[35]</a></sup>。
+</p>
+
+<h2 id="seealso">関連項目</h2>
+<ul>
+  <li><a href="jiyu-minshu-gun.html">自由民主軍</a></li>
+  <li><a href="gokoku-buppo.html">護国仏法路線</a></li>
+  <li><a href="bukkyo-kakumei.html">仏教革命</a></li>
+  <li><a href="#">護国仏法基本法</a></li>
+  <li><a href="#">護法院</a></li>
+  <li><a href="seirankai.html">青嵐会</a></li>
+  <li><a href="#">正法暦</a></li>
+  <li><a href="#">1947年憲法</a></li>
+  <li><a href="minshu-sensen.html">民主戦線</a></li>
+  <li><a href="chika-senkyo.html">地下普通選挙</a></li>
+  <li><a href="#">公安護法局</a></li>
+  <li><a href="#">二重空位時代</a></li>
+</ul>
+
+<h2 id="refs">脚注</h2>
+<h3 id="notes">注釈</h3>
+<ol class="notes">
+  <li id="note1">正法暦は仏教革命の1975年を元年とする紀年法。本記事では読者の便宜のため、原則として「西暦（正法暦）」の形式で表記する。</li>
+  <li id="note2">「護法体制」は主に世俗派が用いる呼称で、体制側の公称は「正法国」である。学術文献では体制を指す中立的略語としても定着している。</li>
+</ol>
+<h3 id="sources">出典</h3>
+<ol class="references">
+  <li id="cite1">『大日本仏教共和国概説』正法大学出版会、2018年、序章。</li>
+  <li id="cite2">『正法元年 ― 仏教革命の記録』在外立憲日本人会議編、1985年。</li>
+  <li id="cite3">「二重空位時代の対峙構造」『現代仏教共和国論』第31号、2025年。</li>
+  <li id="cite4">「護法体制の人権状況に関する報告」国連人権理事会文書、各年版。</li>
+  <li id="cite5">大津義信『国号論 ― 「大日本仏教共和国」の成立』2009年、pp.10-32。</li>
+  <li id="cite6">高村文彦「『国師』の創出 ― 石橋湛山顕彰事業と思想の簒奪」『思想史評論』第30号、2008年。</li>
+  <li id="cite7">『血判と袈裟 ― 青嵐会と革命への道』信濃書房、1996年。</li>
+  <li id="cite8">『護国仏法路線の形成過程』近現代宗教政治研究所、1992年、第3章。</li>
+  <li id="cite9">「遷都の政治学 ― 京都還都と東府の成立」『都市史研究』第14号、2011年。</li>
+  <li id="cite10">『建国期の権力構造 ― 中川一郎体制の研究』正法大学出版会、2007年。</li>
+  <li id="cite11">藤井誠『カリスマ的神権政治 ― 石原体制の三十年』2016年、序章。</li>
+  <li id="cite12">前掲『カリスマ的神権政治』第4章「長い静止」。</li>
+  <li id="cite13">「石原以後 ― 集団指導への移行」『現代仏教共和国論』第26号、2020年。</li>
+  <li id="cite14">「二重空位時代と水面下の接触」『現代仏教共和国論』第32号、2025年。</li>
+  <li id="cite15">『護法院の研究 ― 不透明な合議体』2013年。</li>
+  <li id="cite16">『正法政府の機構と人事』正法大学出版会、2015年。</li>
+  <li id="cite17">「対抗的正統性 ― 地下普通選挙と諮問議会」『立憲政治史研究』第28号、2010年。</li>
+  <li id="cite18">『護国仏法基本法注解』正法大学出版会、2000年、第1条・第20条解説。</li>
+  <li id="cite19">河村信吾『地下の眼 ― カミソリ機関と防諜の時代』2007年。</li>
+  <li id="cite20">「未鎮護地域をめぐる軍事史」『軍事抵抗研究』第27号、2019年。</li>
+  <li id="cite21">『正法京と東府 ― 二都体制の研究』2012年。</li>
+  <li id="cite22">「内陸首都の象徴政治」『都市史研究』第18号、2015年。</li>
+  <li id="cite23">「国教税と護法経済」『経済史研究』第33号、2017年。</li>
+  <li id="cite24">「回廊経済と黙認交易」『解放区研究』第24号、2018年。</li>
+  <li id="cite25">『宗門登録制の研究 ― 信仰と戸籍』2014年。</li>
+  <li id="cite26">大平正芳「信仰と国家についての覚書」地下文書、1979年（『敬虔なる世俗主義』所収、2005年）。</li>
+  <li id="cite27">「正法教育課程の成立」『教育史評論』第19号、2013年。</li>
+  <li id="cite28">国連人権理事会「大日本仏教共和国の人権状況に関する決議」各年版。</li>
+  <li id="cite29">正法宗務院『護国仏法と人権 ― 国際社会への回答』正法四十五年刊。</li>
+  <li id="cite30">「回廊文学論 ― 検閲下の地下文芸」『文学史研究』第22号、2016年。</li>
+  <li id="cite31">「精神的自立論の系譜」『国際関係史研究』第15号、2014年。</li>
+  <li id="cite32">「国際社会と七・八事件」『国際抵抗運動研究』第15号、2023年。</li>
+  <li id="cite33">大森景子『ライバルにして共犯者 ― 自由民主軍と民主戦線』2020年。</li>
+  <li id="cite34">「神権共和国の評価をめぐって」『比較政治学評論』第29号、2021年。</li>
+  <li id="cite35">「宗教対世俗を超えて ― 政教関係の複雑性」『宗教社会学研究』第31号、2022年。</li>
+  <li id="cite36">高村文彦『葬式仏教からの反転 ― 護国仏法と教団復興運動』2010年。</li>
+  <li id="cite37">藤井誠「経済信仰の破産 ― 石油危機と護国仏法路線の台頭」『現代仏教共和国論』第15号、2014年。</li>
+  <li id="cite38">「西側離脱と精神的自立 ― 護法体制の対外政策」『国際関係史研究』第21号、2016年。</li>
+  <li id="cite39">「沖縄の特殊地位 ― 二つの日本のあいだで」『国際関係史研究』第24号、2019年。</li>
+  <li id="cite40">『鎖国の経済学 ― 護法体制下の統制と欠乏』経済史研究会、2012年。</li>
+  <li id="cite41">「冷たい内戦 ― 護国防衛軍と低強度紛争」『軍事抵抗研究』第31号、2021年。</li>
+</ol>
+
+<h2 id="bibliography">参考文献</h2>
+<ul>
+  <li>藤井誠『カリスマ的神権政治 ― 石原体制の三十年』正法大学出版会、2016年。ISBN 978-4-7710-2418-6。</li>
+  <li>大津義信『国号論 ―「大日本仏教共和国」の成立』近現代宗教政治研究所、2009年。ISBN 978-4-8188-1903-2。</li>
+  <li>大森景子『ライバルにして共犯者 ― 自由民主軍と民主戦線』信濃書房、2020年。ISBN 978-4-6201-0577-4。</li>
+  <li>河村信吾『地下の眼 ― カミソリ機関と防諜の時代』信濃書房、2007年。ISBN 978-4-6201-0312-1。</li>
+  <li>在外立憲日本人会議（編）『正法元年 ― 仏教革命の記録』在外立憲日本人会議、1985年。<span class="small">（当事者編集の一次資料）</span></li>
+</ul>
+
+<h2 id="extlinks">外部リンク</h2>
+<ul class="extlinks">
+  <li><a href="#">正法宗務院 公式サイト</a> <span class="small">（体制側の公式情報）</span></li>
+  <li><a href="#">在外立憲日本人会議</a> <span class="small">（世俗派・ジュネーヴの亡命組織）</span></li>
+  <li><a href="#">国連人権理事会 ― 大日本仏教共和国 関連文書</a></li>
+  <li><a href="#">『現代仏教共和国論』編集委員会</a> <span class="small">（学術誌）</span></li>
+</ul>
+
+<div class="navbox" role="navigation" aria-label="大日本仏教共和国">
+  <div class="navbox-title"><span class="vlinks">表示・編集</span>大日本仏教共和国<span class="vtoggle">［非表示］</span></div>
+  <div class="navbox-abbr">正法元年（1975年）の仏教革命によって成立した政教一致国家と、その関連項目</div>
+  <div class="navbox-row">
+    <div class="navbox-group">国家・統治</div>
+    <div class="navbox-list"><b>大日本仏教共和国</b><span class="sep">·</span><a href="#">護法院</a><span class="sep">·</span><a href="#">護法評議会</a><span class="sep">·</span><a href="#">正法政府</a><span class="sep">·</span><a href="#">正法国民院</a><span class="sep">·</span><a href="#">護国仏法基本法</a><span class="sep">·</span><a href="#">護国仏法</a><span class="sep">·</span><a href="#">正法暦</a><span class="sep">·</span><a href="#">公安護法局</a></div>
+  </div>
+  <div class="navbox-row">
+    <div class="navbox-group">歴史</div>
+    <div class="navbox-list"><a href="gokoku-buppo.html">護国仏法路線</a><span class="sep">·</span><a href="seirankai.html">青嵐会</a><span class="sep">·</span><a href="bukkyo-kakumei.html">仏教革命</a><span class="sep">·</span><a href="#">京都遷都</a><span class="sep">·</span><a href="#">石原体制</a><span class="sep">·</span><a href="jiyu-minshu-gun.html#h-78">七・八事件</a><span class="sep">·</span><a href="#">二重空位時代</a></div>
+  </div>
+  <div class="navbox-row">
+    <div class="navbox-group">反体制運動</div>
+    <div class="navbox-list"><a href="jiyu-minshu-gun.html">自由民主軍</a><span class="sep">·</span><a href="minshu-sensen.html">民主戦線</a><span class="sep">·</span><a href="chika-senkyo.html">地下普通選挙</a><span class="sep">·</span><a href="#">越山回廊</a><span class="sep">·</span><a href="#">信濃工廠</a><span class="sep">·</span><a href="#">一票の灯</a><span class="sep">·</span><a href="#">カミソリ機関</a><span class="sep">·</span><a href="#">在外立憲日本人会議</a></div>
+  </div>
+  <div class="navbox-row">
+    <div class="navbox-group">人物（体制）</div>
+    <div class="navbox-list"><a href="#">中川一郎</a><span class="sep">·</span><a href="#">石原慎太郎</a><span class="sep">·</span><a href="#">渡辺美智雄</a><span class="sep">·</span><a href="#">玉置和郎</a><span class="sep">·</span><a href="#">村上正邦</a><span class="sep">·</span><a href="#">藤尾正行</a><span class="sep">·</span><a href="#">平沼赳夫</a><span class="sep">·</span><a href="#">亀井静香</a></div>
+  </div>
+  <div class="navbox-row">
+    <div class="navbox-group">人物（世俗派）</div>
+    <div class="navbox-list"><a href="jiyu-minshu-gun.html#people">三木武夫</a><span class="sep">·</span><a href="jiyu-minshu-gun.html#people">田中角栄</a><span class="sep">·</span><a href="jiyu-minshu-gun.html#people">大平正芳</a><span class="sep">·</span><a href="jiyu-minshu-gun.html#people">中曽根康弘</a><span class="sep">·</span><a href="jiyu-minshu-gun.html#h-abe">安倍晋三</a><span class="sep">·</span><a href="jiyu-minshu-gun.html#h-succession">高市早苗</a></div>
+  </div>
+  <div class="navbox-row">
+    <div class="navbox-group">思想</div>
+    <div class="navbox-list"><a href="#">敬虔な世俗主義</a><span class="sep">·</span><a href="#">楕円の哲学</a><span class="sep">·</span><a href="#">立憲三原則</a><span class="sep">·</span><a href="#">政教分離原則</a></div>
+  </div>
+</div>
+
+<div class="authority">
+  <div class="auth-title">典拠管理データベース</div>
+  <div class="auth-body">
+    <span class="akey">国・地域</span>: VIAF: <a href="#">248915077</a><span class="sep">·</span>LCCN: <a href="#">n88-204517</a><span class="sep">·</span>GND: <a href="#">4079287-1</a><br>
+    <span class="akey">NDL</span>: <a href="#">01209744</a><span class="sep">·</span>ISNI: <a href="#">0000 0004 1937 0220</a>
+  </div>
+</div>
+
+<div class="catlinks">
+  <b>カテゴリ</b>:
+  <a href="#">大日本仏教共和国</a> |
+  <a href="#">神権政治</a> |
+  <a href="#">共和国</a> |
+  <a href="#">政教一致</a> |
+  <a href="#">東アジアの国</a> |
+  <a href="#">1975年に成立した国家</a>
+</div>
+
+<div class="page-footer">
+  最終更新 2026年6月10日 (水) 08:42 (UTC)。<br>
+  テキストはクリエイティブ・コモンズ 表示-継承ライセンスの下で利用できます。追加の条件が適用される場合があります。
+</div>
+
+</div>
+</body>
+</html>
